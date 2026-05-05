@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Coarse_pluck', 'Damage_Spot', 'Damaged_Leaf', 'Fresh_Bud_1', 'Fresh_Bud_2', 'Old_Leaf', 'stems']
+
+roboflow:
+  workspace: nipuna-ivado
+  project: tea-leaf-freshness-detection
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nipuna-ivado/tea-leaf-freshness-detection/dataset/3

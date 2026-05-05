@@ -1,0 +1,140 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d1b0e 0%, #1a3a1a 50%, #0d1b0e 100%);
+  padding: 1rem;
+}
+
+.auth-card {
+  background: #162016;
+  border: 1px solid #2d5a2d;
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-logo {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.auth-header h1 {
+  color: #4ade80;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.auth-header p {
+  color: #88b888;
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.auth-form h2 {
+  color: #e0e0e0;
+  font-size: 1.3rem;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.auth-field {
+  margin-bottom: 1.2rem;
+}
+
+.auth-field label {
+  display: block;
+  color: #a0c8a0;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #0d1b0e;
+  border: 1px solid #2d5a2d;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.auth-field input:focus {
+  border-color: #4ade80;
+}
+
+.auth-field input::placeholder {
+  color: #5a7a5a;
+}
+
+.auth-error {
+  background: #3b1515;
+  border: 1px solid #7a2020;
+  color: #f87171;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4ade80;
+  color: #0d1b0e;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.auth-btn:hover:not(:disabled) {
+  background: #22c55e;
+  transform: translateY(-1px);
+}
+
+.auth-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.auth-toggle p {
+  color: #88b888;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.auth-toggle button {
+  background: none;
+  border: none;
+  color: #4ade80;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.auth-toggle button:hover {
+  color: #22c55e;
+}

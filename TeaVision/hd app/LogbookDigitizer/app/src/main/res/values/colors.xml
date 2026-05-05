@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="estate_primary">#2E7D32</color>
+    <color name="estate_secondary">#4CAF50</color>
+    <color name="estate_background">#F5F9F5</color>
+    <color name="qa_error">#D32F2F</color>
+    <color name="qa_success">#388E3C</color>
+</resources>

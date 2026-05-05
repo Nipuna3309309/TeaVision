@@ -1,0 +1,141 @@
+.byp-panel {
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow:
+    0 18px 40px rgba(56, 78, 52, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  height: 100%;
+}
+
+.byp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.byp-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #3f513d;
+}
+
+.byp-action-id {
+  font-size: 12px;
+  color: #71717a;
+}
+
+.byp-top-row {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.byp-list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #4d584d;
+}
+
+.byp-item {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.byp-label {
+  color: #384438;
+  font-weight: 700;
+}
+
+.byp-profit {
+  font-weight: 600;
+}
+
+.byp-profit-positive {
+  color: #5ea55d;
+}
+
+.byp-profit-negative {
+  color: #dc2626;
+}
+
+.byp-points {
+  margin: 2px 0 0 0;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #566256;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.byp-points li::marker {
+  color: #7e8c7c;
+}
+
+.byp-muted-rule {
+  padding-top: 2px;
+}
+
+.byp-quote {
+  margin: 12px 0 0 0;
+  font-style: italic;
+  color: #6b756b;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.byp-mismatch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.byp-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.byp-badge-green {
+  background: #eaf7ea;
+  color: #4f9b55;
+  border: 1px solid #d6ecd8;
+}
+
+.byp-badge-yellow {
+  background: #fff6e5;
+  color: #c39a39;
+  border: 1px solid #f0e1b8;
+}
+
+.byp-badge-neutral {
+  background: #f1f4ef;
+  color: #6d786c;
+  border: 1px solid #e0e6dc;
+}

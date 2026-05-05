@@ -1,0 +1,125 @@
+.summary-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.summary-soft-card {
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(232, 238, 227, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 12px 34px rgba(44, 58, 39, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.summary-top-card-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6f796f;
+}
+
+.summary-info-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 9999px;
+  border: 1px solid #c8d3c4;
+  font-size: 11px;
+  line-height: 1;
+  color: #7a8678;
+  background: transparent;
+}
+
+.summary-hero-value {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #223125;
+}
+
+.summary-hero-subtext {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #7a8579;
+}
+
+.summary-muted-strong {
+  font-weight: 500;
+  color: #6e776e;
+}
+
+.summary-diff {
+  font-weight: 600;
+}
+
+.summary-diff-positive {
+  color: #63a863;
+}
+
+.summary-diff-negative {
+  color: #c86161;
+}
+
+.summary-status-row {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.summary-status-text {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #222c24;
+}
+
+.summary-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summary-status-icon-sold {
+  background: #67ad68;
+  color: #ffffff;
+}
+
+.summary-status-icon-unsold {
+  background: #e4b74f;
+  color: #ffffff;
+}
+
+.summary-confidence {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #6f796f;
+}
+
+.summary-confidence span {
+  font-weight: 600;
+  color: #485449;
+}
+
+@media (min-width: 1280px) {
+  .summary-cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

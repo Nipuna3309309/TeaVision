@@ -1,0 +1,16 @@
+category,doc_count,total_words,avg_words
+sustainability,41,11919,290.7
+region,38,9854,259.3
+cultivar,15,1417,94.5
+grade,13,1326,102.0
+economics,8,1204,150.5
+health,8,876,109.5
+processing,6,661,110.2
+quality,6,1336,222.7
+plucking,5,579,115.8
+disease,4,469,117.2
+ai_grading,3,359,119.7
+disease_pest,3,630,210.0
+history,2,260,130.0
+production,2,539,269.5
+trade,2,263,131.5

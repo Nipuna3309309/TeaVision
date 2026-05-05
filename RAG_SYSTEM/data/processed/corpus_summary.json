@@ -1,0 +1,25 @@
+{
+  "total_documents": 156,
+  "total_words": 31692,
+  "total_sentences": 1637,
+  "vocabulary_size": 4245,
+  "categories": [
+    "cultivar",
+    "region",
+    "grade",
+    "processing",
+    "health",
+    "plucking",
+    "disease",
+    "economics",
+    "sustainability",
+    "quality",
+    "ai_grading",
+    "history",
+    "trade",
+    "disease_pest",
+    "production"
+  ],
+  "avg_words_per_doc": 203.15384615384616,
+  "total_tags": 316
+}

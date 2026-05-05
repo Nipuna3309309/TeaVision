@@ -1,0 +1,15 @@
+{
+  "project": "25-26J-133",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dim": 384,
+  "total_documents": 156,
+  "total_chunks": 473,
+  "chunk_strategy": "sentence_based",
+  "sentences_per_chunk": 4,
+  "retrieval_methods": [
+    "dense",
+    "bm25",
+    "hybrid"
+  ],
+  "default_top_k": 5
+}

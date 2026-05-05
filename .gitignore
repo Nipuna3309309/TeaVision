@@ -1,0 +1,68 @@
+# Environment / secrets
+.env
+*.env
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+*/venv/
+*/venv/**
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Node modules
+node_modules/
+*/node_modules/
+*/node_modules/**
+.npm/
+
+# Large ML model files (>50MB - use Git LFS or cloud storage)
+*.keras
+*.h5
+*.hdf5
+
+# Large pickle models (>50MB)
+teavisionweb app/backend/ml_models/
+teavisionweb app/backend/ml_models/**
+
+# Model weights - YOLOv8 etc
+*.pt
+*.pth
+*.onnx
+
+# Dataset (managed via Roboflow)
+train/
+valid/
+test/
+roboflow_models/
+
+# Outputs
+runs/
+data/output/
+*.xlsx
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Claude
+.claude/
+
+# Windows reserved files
+nul
+
+# Large PDFs (>50MB) - keep docs but skip huge ones
+Documentation/25-26J-133_IT22154576.pdf
+
+# OS files
+.DS_Store
+Thumbs.db

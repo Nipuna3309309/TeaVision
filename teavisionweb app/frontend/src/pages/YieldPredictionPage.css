@@ -1,0 +1,611 @@
+.yield-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.yp-header {
+  margin-bottom: 24px;
+  color: #90EE90;
+}
+
+.yp-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+/* Location Toggles */
+.yp-location-toggles {
+  display: flex;
+  gap: 12px;
+  background: #f5f5f5;
+  padding: 6px;
+  border-radius: 12px;
+  display: inline-flex;
+}
+
+.yp-loc-btn {
+  padding: 10px 24px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.yp-loc-btn:hover {
+  color: #2e7d32;
+}
+
+.yp-loc-btn.active {
+  background: #fff;
+  color: #2e7d32;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}.yp-model-count {
+  display: inline-block;
+  margin-top: 6px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* Best month card */
+.yp-best-month {
+  background: linear-gradient(135deg, #fff8e1, #fff3e0);
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.yp-best-badge {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.yp-best-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.yp-best-yield {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.yp-best-val {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e65100;
+}
+
+.yp-best-unit {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #bf360c;
+}
+
+.yp-best-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: 8px;
+}
+
+.yp-best-attrs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.yp-best-attr {
+  text-align: center;
+  min-width: 80px;
+}
+
+.yp-best-attr-val {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.yp-best-attr-lbl {
+  display: block;
+  font-size: 0.68rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* Controls row */
+.yp-controls-row {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Field panel */
+.yp-field-panel,
+.yp-settings-panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.yp-field-panel h3,
+.yp-settings-panel h3 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Division tabs */
+.yp-division-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.yp-div-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.yp-div-tab:hover {
+  background: #eee;
+}
+
+.yp-div-tab.active {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.yp-div-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.yp-div-count {
+  background: #e0e0e0;
+  padding: 1px 7px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+/* Field dropdown */
+.yp-field-dropdown-wrap {
+  margin-bottom: 14px;
+}
+
+.yp-field-dropdown {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: #fafafa;
+  cursor: pointer;
+  appearance: auto;
+  transition: border-color 0.15s;
+}
+
+.yp-field-dropdown:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.12);
+}
+
+.yp-field-dropdown optgroup {
+  font-weight: 600;
+  color: #333;
+}
+
+.yp-field-dropdown option {
+  font-weight: 400;
+  padding: 4px;
+}
+
+/* Explanation box */
+.yp-explanation {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: #5d4037;
+  line-height: 1.5;
+}
+
+.yp-explanation strong {
+  color: #e65100;
+}
+
+/* Field info bar */
+.yp-field-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.yp-fi-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.yp-field-key {
+  font-weight: 600;
+  color: #333;
+}
+
+.yp-field-range {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+.yp-fi-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.yp-fi-tag {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.yp-fi-cap {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* Input fields (environmental inputs) */
+.yp-input-hint {
+  font-size: 0.75rem;
+  color: #999;
+  margin: 0 0 12px;
+}
+
+.yp-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.yp-input-field label {
+  font-size: 0.75rem;
+  color: #666;
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.yp-input-field input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+
+.yp-input-field input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.12);
+}
+
+.yp-input-sub {
+  display: block;
+  font-size: 0.68rem;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* Settings */
+.yp-setting {
+  margin-bottom: 16px;
+}
+
+.yp-setting label {
+  font-size: 0.85rem;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.yp-slider {
+  width: 100%;
+  accent-color: #4CAF50;
+}
+
+.yp-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 2px;
+}
+
+.yp-predict-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.yp-predict-btn:hover {
+  background: #388E3C;
+}
+
+.yp-predict-btn:disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+/* Error */
+.yp-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+}
+
+/* Results */
+.yp-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Summary row */
+.yp-summary-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.yp-summary-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.yp-summary-card.yp-card-highlight {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border: 1px solid #a5d6a7;
+}
+
+.yp-summary-val {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.yp-summary-unit {
+  display: block;
+  font-size: 0.72rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.yp-summary-lbl {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Inputs used tags */
+.yp-inputs-used {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.yp-iu-label {
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.yp-iu-tag {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.yp-iu-tag-info {
+  background: #fff3e0;
+  color: #e65100;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-style: italic;
+}
+
+/* Chart */
+.yp-chart-card,
+.yp-table-card,
+.yp-model-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.yp-chart-card h3,
+.yp-table-card h3,
+.yp-model-card h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.yp-chart-legend {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.yp-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.yp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.yp-canvas {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+
+/* Table */
+.yp-table-wrap {
+  overflow-x: auto;
+}
+
+.yp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.yp-table th {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 2px solid #e0e0e0;
+  color: #555;
+  font-weight: 600;
+}
+
+.yp-table td {
+  padding: 7px 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.yp-table tr:hover {
+  background: #fafafa;
+}
+
+.yp-val-cell {
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.yp-range-cell {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Model info */
+.yp-model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.yp-model-item {
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.yp-mi-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+.yp-mi-val {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .yp-controls-row {
+    grid-template-columns: 1fr;
+  }
+
+  .yp-summary-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yp-input-grid {
+    grid-template-columns: 1fr;
+  }
+}

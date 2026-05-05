@@ -1,0 +1,227 @@
+.tgp-container {
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: 'Inter', -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.tgp-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tgp-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #fff 0%, #a8e063 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.tgp-header p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.tgp-main-grid {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Form Styles */
+.tgp-form-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.tgp-section-title {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #f1f5f9;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tgp-form-group {
+  margin-bottom: 20px;
+}
+
+.tgp-form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tgp-form-group select, .tgp-form-group input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(168, 224, 99, 0.05);
+  border: 1px solid rgba(168, 224, 99, 0.2);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+}
+
+.tgp-form-group select:hover {
+  background: rgba(168, 224, 99, 0.08);
+  border-color: rgba(168, 224, 99, 0.4);
+}
+
+.tgp-form-group select:focus {
+  border-color: #a8e063;
+  background: rgba(168, 224, 99, 0.1);
+  box-shadow: 0 0 15px rgba(168, 224, 99, 0.2);
+}
+
+/* Style the dropdown list (options) for browsers that support it */
+.tgp-form-group select option {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+}
+
+.tgp-submit-btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #4d7c0f 0%, #a8e063 100%);
+  color: #000;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tgp-submit-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(168, 224, 99, 0.4);
+}
+
+.tgp-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Result Area Styles */
+.tgp-result-area {
+  min-height: 500px;
+}
+
+.tgp-empty-state {
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px dashed rgba(255, 255, 255, 0.05);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  color: #64748b;
+  text-align: center;
+  padding: 40px;
+}
+
+.tgp-summary-box {
+  background: rgba(168, 224, 99, 0.1);
+  border-left: 5px solid #a8e063;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.tgp-treatment-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tgp-cat-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.tgp-cat-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+}
+
+.tgp-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tgp-cat-icon {
+  font-size: 1.8rem;
+}
+
+.tgp-cat-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.tgp-cat-card.organic h3 { color: #a8e063; }
+.tgp-cat-card.manual h3 { color: #60a5fa; }
+.tgp-cat-card.chemical h3 { color: #f87171; }
+
+.tgp-cat-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tgp-cat-card li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.tgp-cat-card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: inherit;
+  opacity: 0.5;
+}
+
+.tgp-error-msg {
+  margin-top: 15px;
+  color: #f87171;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .tgp-main-grid {
+    grid-template-columns: 1fr;
+  }
+}

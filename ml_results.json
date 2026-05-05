@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-03-03T19:56:34.481313",
+  "total_images": 148,
+  "train_size": 118,
+  "test_size": 30,
+  "class_distribution": {
+    "high_quality": 52,
+    "medium_quality": 96
+  },
+  "results": [
+    {
+      "Model": "MLP Neural Network",
+      "Train Acc": "100.00%",
+      "Test Acc": "86.67%",
+      "Precision": "87.81%",
+      "Recall": "86.67%",
+      "F1 Score": "86.85%",
+      "CV Mean": "94.06% \u00b1 4.28%"
+    },
+    {
+      "Model": "AdaBoost",
+      "Train Acc": "94.92%",
+      "Test Acc": "83.33%",
+      "Precision": "83.80%",
+      "Recall": "83.33%",
+      "F1 Score": "83.47%",
+      "CV Mean": "88.12% \u00b1 4.14%"
+    },
+    {
+      "Model": "Logistic Regression",
+      "Train Acc": "94.07%",
+      "Test Acc": "83.33%",
+      "Precision": "85.57%",
+      "Recall": "83.33%",
+      "F1 Score": "83.62%",
+      "CV Mean": "93.22% \u00b1 7.73%"
+    },
+    {
+      "Model": "SVM (RBF)",
+      "Train Acc": "94.92%",
+      "Test Acc": "83.33%",
+      "Precision": "83.80%",
+      "Recall": "83.33%",
+      "F1 Score": "83.47%",
+      "CV Mean": "90.65% \u00b1 5.59%"
+    },
+    {
+      "Model": "SVM (Linear)",
+      "Train Acc": "95.76%",
+      "Test Acc": "83.33%",
+      "Precision": "85.57%",
+      "Recall": "83.33%",
+      "F1 Score": "83.62%",
+      "CV Mean": "94.06% \u00b1 6.26%"
+    },
+    {
+      "Model": "Naive Bayes",
+      "Train Acc": "90.68%",
+      "Test Acc": "83.33%",
+      "Precision": "85.57%",
+      "Recall": "83.33%",
+      "F1 Score": "83.62%",
+      "CV Mean": "88.95% \u00b1 6.83%"
+    },
+    {
+      "Model": "Random Forest",
+      "Train Acc": "94.07%",
+      "Test Acc": "80.00%",
+      "Precision": "80.00%",
+      "Recall": "80.00%",
+      "F1 Score": "80.00%",
+      "CV Mean": "83.01% \u00b1 7.09%"
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Train Acc": "99.15%",
+      "Test Acc": "76.67%",
+      "Precision": "76.44%",
+      "Recall": "76.67%",
+      "F1 Score": "75.68%",
+      "CV Mean": "88.12% \u00b1 6.70%"
+    },
+    {
+      "Model": "Decision Tree",
+      "Train Acc": "95.76%",
+      "Test Acc": "76.67%",
+      "Precision": "77.22%",
+      "Recall": "76.67%",
+      "F1 Score": "76.86%",
+      "CV Mean": "88.99% \u00b1 4.26%"
+    },
+    {
+      "Model": "KNN",
+      "Train Acc": "90.68%",
+      "Test Acc": "76.67%",
+      "Precision": "81.73%",
+      "Recall": "76.67%",
+      "F1 Score": "77.06%",
+      "CV Mean": "84.78% \u00b1 5.62%"
+    }
+  ]
+}

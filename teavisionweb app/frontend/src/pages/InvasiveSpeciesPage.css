@@ -1,0 +1,340 @@
+.invasive-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.isp-header {
+  margin-bottom: 2rem;
+}
+
+.isp-header h1 {
+  color: #90EE90;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.isp-header p {
+  color: #b8d4b8;
+  margin-top: 0.5rem;
+}
+
+/* Controls */
+.isp-controls-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Upload Section */
+.isp-upload-section {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.isp-upload-area {
+  width: 100%;
+  min-height: 320px;
+  border: 3px dashed rgba(0, 188, 212, 0.4);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.isp-upload-area:hover {
+  border-color: #00BCD4;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.isp-upload-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 320px;
+}
+
+.isp-upload-placeholder {
+  text-align: center;
+  color: #b8d4b8;
+}
+
+.isp-upload-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.isp-upload-hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Settings and Detection Panel */
+.isp-settings-panel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.isp-settings-panel h3 {
+  color: #1a472a;
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e0f7fa;
+}
+
+/* Buttons */
+.isp-button-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.isp-detect-button {
+  flex: 1;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.isp-detect-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+}
+
+.isp-detect-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.isp-reset-button {
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  background: white;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.isp-reset-button:hover {
+  border-color: #F44336;
+  color: #F44336;
+}
+
+/* Info Box */
+.isp-info-box {
+  background: #e0f7fa;
+  border: 1px solid #b2ebf2;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.isp-info-box h4 {
+  color: #00838f;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.isp-info-text {
+  font-size: 0.85rem;
+  color: #006064;
+  line-height: 1.4;
+}
+
+/* Error */
+.isp-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #F44336;
+}
+
+/* Results */
+.isp-results {
+  animation: ispFadeIn 0.5s ease;
+}
+
+@keyframes ispFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Verdict */
+.isp-verdict {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-left: 6px solid #4CAF50;
+}
+
+.isp-verdict-icon {
+  font-size: 3rem;
+}
+
+.isp-verdict-text {
+  flex: 1;
+}
+
+.isp-verdict-label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a472a;
+}
+
+.isp-verdict-desc {
+  display: block;
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* Confidence Bar */
+.isp-confidence-bar-wrap {
+  margin-top: 1rem;
+}
+
+.isp-conf-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.isp-conf-bg {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.isp-conf-fill {
+  height: 100%;
+  background: #4CAF50;
+  border-radius: 6px;
+  transition: width 1s ease-out;
+}
+
+/* Management Solutions Grid */
+.isp-solution-container {
+  margin-top: 30px;
+  animation: ispFadeIn 0.8s ease;
+}
+
+.isp-solution-container h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #4CAF50;
+}
+
+.isp-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.isp-solution-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.isp-solution-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.isp-solution-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.isp-solution-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Specific Card Accents */
+.isp-solution-card.manual { border-top: 5px solid #3b82f6; }
+.isp-solution-card.manual h4 { color: #60a5fa; }
+
+.isp-solution-card.organic { border-top: 5px solid #22c55e; }
+.isp-solution-card.organic h4 { color: #4ade80; }
+
+.isp-solution-card.chemical { border-top: 5px solid #f59e0b; }
+.isp-solution-card.chemical h4 { color: #fbbf24; }
+
+.isp-solution-card.prevention { border-top: 5px solid #6366f1; }
+.isp-solution-card.prevention h4 { color: #818cf8; }
+
+/* Desktop adjustment */
+@media (min-width: 1025px) {
+  .isp-solution-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .isp-controls-row {
+    flex-direction: column;
+  }
+  .isp-upload-section {
+    width: 100%;
+  }
+  .isp-upload-area {
+    min-height: 250px;
+  }
+}

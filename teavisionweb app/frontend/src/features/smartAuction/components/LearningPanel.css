@@ -1,0 +1,22 @@
+.learning-panel {
+  border: 1px solid #dbe8d8;
+  border-radius: 24px;
+  background: rgba(243, 251, 239, 0.95);
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(97, 144, 94, 0.08);
+}
+
+.learning-panel__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #4a6d43;
+}
+
+.learning-panel__message {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #597058;
+}

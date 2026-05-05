@@ -1,0 +1,42 @@
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(245, 247, 242, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.loading-overlay__card {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px 32px;
+  box-shadow: 0 18px 50px rgba(70, 88, 64, 0.18);
+}
+
+.loading-overlay__spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 9999px;
+  border: 3px solid #d9e8d4;
+  border-top-color: #67ad68;
+  animation: loadingOverlaySpin 0.9s linear infinite;
+}
+
+.loading-overlay__text {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #506050;
+}
+
+@keyframes loadingOverlaySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

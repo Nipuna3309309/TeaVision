@@ -1,0 +1,410 @@
+.neo-farm-container {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Area (NeoFarm Dark Card) */
+.nf-header-card {
+  background: linear-gradient(145deg, #1c2b21, #2d4536);
+  border-radius: 24px;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.nf-header-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(144,238,144,0.1) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nf-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.nf-location {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nf-pin {
+  font-size: 1.5rem;
+}
+
+.nf-location h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nf-location p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #a3c4ab;
+}
+
+.nf-user-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Weather Main */
+.nf-weather-main {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nf-temp-huge {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nf-temp-huge span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #a3c4ab;
+}
+
+.nf-weather-desc {
+  padding-bottom: 0.5rem;
+}
+
+.nf-weather-desc-row {
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nf-w-icon {
+  font-size: 1.5rem;
+}
+
+.nf-w-date {
+  font-size: 0.85rem;
+  color: #a3c4ab;
+  margin-top: 0.25rem;
+}
+
+/* Weather Stats Panel */
+.nf-weather-stats {
+  display: flex;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.nf-stat-pill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nf-stat-pill:last-child {
+  border-right: none;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #a3c4ab;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.stat-val {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Main Content Grid */
+.nf-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+/* Cards */
+.nf-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nf-card-title {
+  color: #1c2b21;
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.nf-card-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Grid */
+.nf-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nf-input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a5d51;
+  margin-bottom: 0.5rem;
+}
+
+.nf-input-group input,
+.nf-input-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid #e0e6e2;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #1c2b21;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fcfdfc;
+}
+
+.nf-input-group input:focus,
+.nf-input-group select:focus {
+  border-color: #6bbe74;
+}
+
+.nf-predict-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #90EE90; /* NeoFarm light green */
+  color: #1c2b21;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nf-predict-btn:hover:not(:disabled) {
+  background: #7bd47b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(144, 238, 144, 0.4);
+}
+
+.nf-predict-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.nf-error {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Results Card */
+.nf-results-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.nf-empty-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #888;
+  padding: 2rem 0;
+}
+
+.nf-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.nf-loading-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6bbe74;
+}
+
+.nf-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e0e6e2;
+  border-top-color: #6bbe74;
+  border-radius: 50%;
+  animation: spinner 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+
+.nf-result-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+/* Circular SVG Indicator */
+.nf-risk-circle-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 2rem;
+}
+
+.nf-risk-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.nf-circle-bg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 3;
+}
+
+.nf-circle-fill {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease-out;
+}
+
+.nf-circle-fill.low { stroke: #4CAF50; }
+.nf-circle-fill.moderate { stroke: #FF9800; }
+.nf-circle-fill.high { stroke: #F44336; }
+
+.nf-risk-score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nf-risk-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nf-risk-text.low { color: #4CAF50; }
+.nf-risk-text.moderate { color: #FF9800; }
+.nf-risk-text.high { color: #F44336; }
+
+.nf-risk-sub {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+/* Verdict Box */
+.nf-verdict-box {
+  width: 100%;
+  text-align: center;
+  background: #f8faf9;
+  border: 1px solid #e0e6e2;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.nf-verdict-box h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #4a5d51;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nf-disease-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nf-disease-name.safe {
+  color: #166534;
+}
+
+.nf-disease-name.danger {
+  color: #b91c1c;
+}
+
+.nf-ensemble-note {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .nf-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nf-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .nf-weather-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

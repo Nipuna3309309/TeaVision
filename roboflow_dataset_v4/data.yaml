@@ -1,0 +1,12 @@
+names:
+- Coarse_pluck
+- Damage_Spot
+- Damaged_Leaf
+- Fresh_Bud_1
+- Fresh_Bud_2
+- Old_Leaf
+- stems
+nc: 7
+train: C:/Nipuna/TEST/roboflow_dataset_v4/train/images
+val: C:/Nipuna/TEST/roboflow_dataset_v4/valid/images
+test: C:/Nipuna/TEST/roboflow_dataset_v4/test/images

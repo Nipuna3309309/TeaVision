@@ -1,0 +1,229 @@
+.arc-panel {
+  overflow: visible;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow:
+    0 18px 40px rgba(56, 78, 52, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.arc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arc-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #3f513d;
+}
+
+.arc-content {
+  margin-top: 16px;
+}
+
+.arc-result-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #edf1ea;
+}
+
+.arc-result-row:last-child {
+  border-bottom: none;
+}
+
+.arc-row-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arc-row-label-text {
+  font-size: 15px;
+  color: #485449;
+}
+
+.arc-inline-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.arc-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374337;
+  text-align: right;
+}
+
+.arc-profit {
+  color: #5ca35a;
+}
+
+.arc-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.arc-badge-green {
+  background: #eaf7ea;
+  color: #4f9b55;
+  border: 1px solid #d6ecd8;
+}
+
+.arc-badge-red {
+  background: #fdeeee;
+  color: #c85f5f;
+  border: 1px solid #f4d7d7;
+}
+
+.arc-badge-yellow {
+  background: #fff6e5;
+  color: #c39a39;
+  border: 1px solid #f0e1b8;
+}
+
+.arc-badge-neutral {
+  background: #f1f4ef;
+  color: #6d786c;
+  border: 1px solid #e0e6dc;
+}
+
+.arc-progress-card {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #edf1ea;
+  border-radius: 20px;
+  background: rgba(248, 250, 246, 0.90);
+}
+
+.arc-progress-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #6f796f;
+}
+
+.arc-progress-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arc-progress-track {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7eee3;
+}
+
+.arc-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: #66ad67;
+  transition: width 0.3s ease;
+}
+
+.arc-progress-bottom {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: #6f796f;
+}
+
+.arc-tooltip-group {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.arc-tooltip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 999px;
+  border: 1px solid #c8d1c5;
+  background: transparent;
+  color: #889388;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  cursor: help;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.arc-tooltip-group:hover .arc-tooltip-icon {
+  border-color: #a8b5a4;
+  color: #687468;
+}
+
+.arc-tooltip-box {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 30;
+  margin-top: 8px;
+  width: max-content;
+  max-width: 220px;
+  transform: translateX(-50%);
+  border: 1px solid #dfe6da;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 8px 12px;
+  color: #556255;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  opacity: 0;
+  box-shadow: 0 10px 30px rgba(70, 88, 64, 0.14);
+  transition: opacity 0.2s ease;
+}
+
+.arc-tooltip-group:hover .arc-tooltip-box {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .arc-result-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .arc-value {
+    text-align: left;
+  }
+
+  .arc-progress-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

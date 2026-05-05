@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeaVision &mdash; AI-Driven Tea Production &amp; Quality System</title>
+  <meta name="description"
+    content="TeaVision: A multi-modal AI framework for Sri Lanka's tea industry — freshness grading, yield forecasting, auction demand prediction, and disease detection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============= NAVBAR ============= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-leaf"><i class="fa-solid fa-leaf"></i></span>
+        <span class="brand-text">TeaVision</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#components">Components</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#documents">Documents &amp; Presentations</a>
+        <a href="#team">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============= HERO ============= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Project 25-26J-133 &middot; Research Project</p>
+        <h1>Hi, Welcome to <span class="grad-text">TeaVision</span></h1>
+        <p class="hero-tags">
+          <span>Freshness Grading</span><i>|</i>
+          <span>Yield Forecasting</span><i>|</i>
+          <span>Auction Prediction</span><i>|</i>
+          <span>Disease Detection</span>
+        </p>
+        <p class="hero-desc">
+          AI-Driven Innovations to Enhance Tea Production and Quality in Sri Lanka&rsquo;s
+          Mid-Country &mdash; a multi-modal AI framework automating freshness grading, yield
+          digitisation &amp; forecasting, auction demand prediction, and disease/pest detection
+          from field to factory.
+        </p>
+        <div class="hero-cta">
+          <a href="#solution" class="btn btn-primary">Explore the Solution <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#research" class="btn btn-ghost">Read Our Research</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>96%</h3>
+            <p>Grader Accuracy</p>
+          </div>
+          <div class="stat">
+            <h3>5</h3>
+            <p>OCR Fuzzy Algorithms</p>
+          </div>
+          <div class="stat">
+            <h3>86%</h3>
+            <p>Disease CNN Acc.</p>
+          </div>
+          <div class="stat">
+            <h3>3</h3>
+            <p>RL Auction Agents</p>
+          </div>
+        </div>
+        <div class="hero-pillars">
+          <div class="pillar"><i class="fa-solid fa-eye"></i><span>Grading</span></div>
+          <div class="pillar"><i class="fa-solid fa-file-lines"></i><span>OCR</span></div>
+          <div class="pillar"><i class="fa-solid fa-gavel"></i><span>Auction</span></div>
+          <div class="pillar"><i class="fa-solid fa-virus"></i><span>Disease</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><a href="#research"><i class="fa-solid fa-angles-down"></i></a></div>
+  </section>
+
+  <!-- ============= RESEARCH ============= -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our Research</p>
+        <h2>From Manual Assessment to <span class="grad-text">AI-Driven Decisions</span></h2>
+        <p class="section-sub">
+          Sri Lanka&rsquo;s tea sector is a major agricultural export industry and a key source
+          of foreign-exchange earnings, yet operational decision-making remains constrained by
+          manual assessment and incomplete digitisation.
+        </p>
+      </div>
+
+      <!-- Project Scope -->
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Project Scope</h3>
+          <p>
+            Develop a multi-modal AI framework addressing four prediction tasks aligned with
+            practical actions from field to auction: freshness grading from mobile imagery,
+            yield digitisation and forecasting from estate records, auction-oriented demand
+            forecasting from historical Colombo tea auction data, and field health-risk
+            recognition from images linked to climate data.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3>Literature Survey</h3>
+          <p>
+            AI in agriculture has moved from isolated prediction models to integrated
+            decision-support systems. In tea production, AI has been applied to freshness
+            grading, yield forecasting, auction price prediction, and plant health monitoring.
+            However, most studies rely on laboratory-style datasets, limiting deployment reliability
+            in real plantation and market conditions.
+          </p>
+        </div>
+      </div>
+
+      <!-- Literature Survey Detail -->
+      <div class="sol-extra" style="margin-top:28px;">
+        <div class="sol-extra-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div>
+          <h3>Literature Survey Visual Representation</h3>
+          <p>
+            Manual tea leaf grading is subjective and inconsistent. Early automation showed
+            fresh-leaf sorting was feasible in controlled settings, and CNNs improved quality
+            assessment, but robustness drops under field variation. Statistical models like
+            ARIMA remain common for yield forecasting, while hybrid approaches combining
+            simulation with ML improve performance. OCR is widely studied but end-to-end
+            integration into agricultural analytics is limited. Tea auctions are difficult
+            to predict due to volatility, and most work treats visual disease detection
+            and climate-linked outbreak prediction separately.
+          </p>
+        </div>
+      </div>
+
+      <!-- Research Gap -->
+      <h3 class="sub-h">Research Gap</h3>
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-image"></i></div>
+          <h3>Laboratory-centric grading datasets</h3>
+          <p>
+            Most grading studies rely on laboratory-style datasets, limiting deployment reliability
+            in plantations. This motivates standardised mobile image capture and stronger
+            preprocessing to reduce illumination shifts and background noise.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-file-excel"></i></div>
+          <h3>Incomplete digitisation of estate records</h3>
+          <p>
+            Many estates depend on handwritten records. OCR has been widely studied for automated
+            text extraction, but end-to-end integration into agricultural analytics pipelines
+            is still limited, hindering yield forecasting accuracy.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Auction demand inferred, not measured</h3>
+          <p>
+            Many demand models assume direct demand observations, while in tea auctions demand
+            is often inferred from bidding dynamics rather than measured explicitly.
+            Non-stationarity and temporal structure further complicate prediction.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Separate disease and climate models</h3>
+          <p>
+            Most work treats visual disease detection and climate-linked outbreak prediction
+            separately. For elevation-stratified Sri Lankan plantations, integrated frameworks
+            combining visual health detection, invasive species monitoring, and seasonal risk
+            modelling remain limited.
+          </p>
+        </div>
+      </div>
+
+      <!-- Research Problem -->
+      <h3 class="sub-h">Research Problem</h3>
+      <div class="sol-extra">
+        <div class="sol-extra-icon"><i class="fa-solid fa-circle-question"></i></div>
+        <div>
+          <h3>How to automate tea quality and production decisions from field to auction?</h3>
+          <p>
+            Deployment-faithful modelling is shaped by three recurring reliability constraints:
+            (1)&nbsp;<strong>Domain shift</strong> across estates, devices, and illumination in
+            mobile imagery, and across scan quality and layout variation in historical records;
+            (2)&nbsp;<strong>Temporal non-stationarity</strong> in production and market targets,
+            requiring time-ordered evaluation;
+            (3)&nbsp;<strong>Class imbalance</strong> where minority classes carry disproportionate
+            operational risk, requiring imbalance-aware reporting because aggregate accuracy can
+            obscure failures on rare but consequential outcomes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Objective -->
+      <h3 class="sub-h">Main Objective</h3>
+      <div class="card" style="margin-bottom:28px;">
+        <div class="card-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+        <h3>Integrated AI Decision-Support for Sri Lanka&rsquo;s Tea Sector</h3>
+        <p>
+          Develop a multi-modal AI framework that automates key decision-making processes in
+          Sri Lanka&rsquo;s tea industry by leveraging deep learning for four tasks: freshness
+          grading and tea-type classification from mobile-captured leaf images, yield forecasting
+          using estate records and scanned logbooks, auction demand prediction based on historical
+          transaction data, and disease/pest detection from images with seasonal risk prediction
+          linked to climate data. The system must remain robust to heterogeneous capture conditions
+          and record formats, enabling early detection, accurate forecasting, and informed
+          decision-making as a scalable solution to improve productivity, quality, and market
+          competitiveness.
+        </p>
+      </div>
+
+      <!-- Specific Objectives -->
+      <div class="objectives">
+        <h3 class="sub-h">Specific Objectives</h3>
+        <div class="grid grid-4">
+          <div class="obj"><span>01</span>
+            <p>Freshness grading and tea-type classification from mobile-captured leaf images using YOLOv8 + SAHI
+              detection and explainable ML grading.</p>
+          </div>
+          <div class="obj"><span>02</span>
+            <p>Yield digitisation and forecasting using scanned estate logbooks with OCR, fuzzy matching, and structured
+              data extraction.</p>
+          </div>
+          <div class="obj"><span>03</span>
+            <p>Auction-oriented demand forecasting using historical Colombo tea auction transactions with multi-agent RL
+              simulation and ARIMA models.</p>
+          </div>
+          <div class="obj"><span>04</span>
+            <p>Field health-risk recognition from images under label scarcity and class imbalance, with seasonal risk
+              prediction linked to climate data.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="counter-row">
+        <div class="counter">
+          <h3>200</h3>
+          <p>Days Worked</p>
+        </div>
+        <div class="counter">
+          <h3>10</h3>
+          <p>Documents</p>
+        </div>
+        <div class="counter">
+          <h3>4</h3>
+          <p>Presentations</p>
+        </div>
+        <div class="counter">
+          <h3>8</h3>
+          <p>Milestones</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= COMPONENTS ============= -->
+  <section class="section" id="components">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Project 25-26J-133 &middot; Components</p>
+        <h2>Four Researchers, <span class="grad-text">Four Components</span></h2>
+        <p class="section-sub">
+          AI-Driven Tea Quality and Production Improvements &mdash; built from four
+          complementary research components, each owned and engineered by a team member.
+        </p>
+      </div>
+
+      <div class="grid grid-2 comp-grid">
+
+        <!-- Component 1 -->
+        <div class="comp">
+          <div class="comp-head">
+            <div class="comp-id">IT22154576</div>
+            <h3>Tea Leaf Freshness Grading &amp; Inspection</h3>
+            <p class="comp-owner"><i class="fa-solid fa-user"></i> Nipuna Abeysekara</p>
+          </div>
+          <p class="comp-desc">
+            YOLOv8s + SAHI multi-class detection (7 classes), explainable binary grading
+            via 25 OpenCV features feeding 10 classical ML models, plus a RAG-powered
+            Ceylon Tea knowledge base over 156 documents and 473 chunks. 275 leaf images
+            collected across 66 field sessions in mid-country estates.
+          </p>
+          <div class="comp-stats">
+            <div><strong>96.36%</strong><span>AdaBoost test acc.</span></div>
+            <div><strong>32.5%</strong><span>YOLOv8 mAP@0.5</span></div>
+            <div><strong>1.00</strong><span>RAG MRR</span></div>
+          </div>
+          <div class="comp-tags">
+            <span>YOLOv8s</span><span>SAHI</span><span>AdaBoost</span><span>OpenCV</span>
+            <span>Sentence-BERT</span><span>FAISS</span><span>BM25</span><span>RRF</span><span>FastAPI</span>
+          </div>
+        </div>
+
+        <!-- Component 2 -->
+        <div class="comp">
+          <div class="comp-head">
+            <div class="comp-id">IT22222268</div>
+            <h3>Tea Yield Log Book Digitization and &amp; Predictive Analytics for Crop Yield Management</h3>
+            <p class="comp-owner"><i class="fa-solid fa-user"></i> Harsha Waduthanthri</p>
+          </div>
+          <p class="comp-desc">
+            Vision-based OCR pipeline that converts physical tea-yield logbook pages into
+            structured Excel spreadsheets. Cell-grid detection, per-cell crop recognition,
+            5-algorithm fuzzy matching ensemble, and template-driven export to digitise
+            estate records for yield forecasting.
+          </p>
+          <div class="comp-stats">
+            <div><strong>5</strong><span>Fuzzy algorithms</span></div>
+            <div><strong>17</strong><span>Columns extracted</span></div>
+            <div><strong>XLSX</strong><span>Auto export</span></div>
+          </div>
+          <div class="comp-tags">
+            <span>OpenCV</span><span>PaddleOCR</span><span>Fuzzy Matching</span>
+            <span>Excel</span><span>Python</span><span>CLAHE</span>
+          </div>
+        </div>
+
+        <!-- Component 3 -->
+        <div class="comp">
+          <div class="comp-head">
+            <div class="comp-id">IT22142146</div>
+            <h3>Tea Leaf Health Detection and Seasonal Risk Prediction</h3>
+            <p class="comp-owner"><i class="fa-solid fa-user"></i> Dinithi Wijerathne</p>
+          </div>
+          <p class="comp-desc">
+            CNN-based disease/pest detection from images with Grad-CAM explainability,
+            combined with seasonal risk prediction linked to climate data. Native Android
+            (Kotlin / Jetpack Compose) capture app with 5 real-time quality gates and
+            TF-Lite leaf segmentation for field deployment.
+          </p>
+          <div class="comp-stats">
+            <div><strong>86.67%</strong><span>Disease CNN acc.</span></div>
+            <div><strong>78.4%</strong><span>Quality pass rate</span></div>
+            <div><strong>94.2%</strong><span>TF-Lite detection</span></div>
+          </div>
+          <div class="comp-tags">
+            <span>CNN</span><span>Grad-CAM</span><span>Kotlin</span><span>Jetpack Compose</span>
+            <span>TF-Lite</span><span>CameraX</span><span>SARIMAX</span>
+          </div>
+        </div>
+
+        <!-- Component 4 -->
+        <div class="comp">
+          <div class="comp-head">
+            <div class="comp-id">IT22247018</div>
+            <h3> Tea Market Demand Forecasting and Smart Auction Planning </h3>
+            <p class="comp-owner"><i class="fa-solid fa-user"></i> Nimesh Bandaranayake</p>
+          </div>
+          <p class="comp-desc">
+            Multi-Agent Reinforcement Learning auction simulator with 3 RL agents (DQN Buyer,
+            PPO Factory, PPO Broker) and ARIMA-based tea price forecasting using historical
+            Colombo tea auction data. Unified React 19 + Vite web dashboard integrating all
+            four subsystems with QR Connect mobile bridge.
+          </p>
+          <div class="comp-stats">
+            <div><strong>3</strong><span>RL agents</span></div>
+            <div><strong>60%</strong><span>Clearance rate</span></div>
+            <div><strong>ARIMA</strong><span>Price forecast</span></div>
+          </div>
+          <div class="comp-tags">
+            <span>DQN</span><span>PPO</span><span>Stable-Baselines3</span>
+            <span>ARIMA</span><span>React 19</span><span>Vite</span><span>FastAPI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-block">
+        <h3 class="sub-h">Used Technologies</h3>
+        <div class="tech-grid">
+          <div class="tech"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="tech"><i class="fa-solid fa-bolt"></i><span>FastAPI</span></div>
+          <div class="tech"><i class="fa-brands fa-react"></i><span>React</span></div>
+          <div class="tech"><i class="fa-solid fa-robot"></i><span>YOLOv8</span></div>
+          <div class="tech"><i class="fa-solid fa-layer-group"></i><span>SAHI</span></div>
+          <div class="tech"><i class="fa-solid fa-camera"></i><span>OpenCV</span></div>
+          <div class="tech"><i class="fa-solid fa-flask"></i><span>scikit-learn</span></div>
+          <div class="tech"><i class="fa-solid fa-font"></i><span>PaddleOCR</span></div>
+          <div class="tech"><i class="fa-solid fa-brain"></i><span>TensorFlow</span></div>
+          <div class="tech"><i class="fa-solid fa-fire"></i><span>PyTorch</span></div>
+          <div class="tech"><i class="fa-brands fa-android"></i><span>Kotlin</span></div>
+          <div class="tech"><i class="fa-solid fa-microchip"></i><span>TF-Lite</span></div>
+          <div class="tech"><i class="fa-solid fa-gamepad"></i><span>Stable-Baselines3</span></div>
+          <div class="tech"><i class="fa-solid fa-chart-line"></i><span>ARIMA</span></div>
+          <div class="tech"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= MILESTONES ============= -->
+  <section class="section section-alt" id="milestones">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our Milestones</p>
+        <h2>Project <span class="grad-text">Timeline</span></h2>
+        <p class="section-sub">Eight milestones taking TeaVision from problem framing to final evaluation.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Aug 2025</span>
+            <h4>Project Proposal</h4>
+            <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project
+              approved.</p>
+            <span class="tl-mark">12%</span>
+            <p class="tl-marks-label">Marks Allocated: 12</p>
+          </div>
+        </div>
+        <div class="tl-item right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Dec 2025</span>
+            <h4>Progress Presentation I</h4>
+            <p>Progress Presentation I reviews the 50% completion status of the project. This reveals any gaps or
+              inconsistencies in the design/requirements.</p>
+            <span class="tl-mark">15%</span>
+            <p class="tl-marks-label">Marks Allocated: 15</p>
+          </div>
+        </div>
+        <div class="tl-item left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Mar 2026</span>
+            <h4>Progress Presentation II</h4>
+            <p>Progress Presentation II reviews the 90% completion status demonstration of the project. Along with a
+              Poster presentation which describes the project as a whole.</p>
+            <span class="tl-mark">18%</span>
+            <p class="tl-marks-label">Marks Allocated: 18</p>
+          </div>
+        </div>
+        <div class="tl-item right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">May 2026</span>
+            <h4>Research Paper</h4>
+            <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you referred
+              in making new knowledge.</p>
+            <span class="tl-mark">10%</span>
+            <p class="tl-marks-label">Marks Allocated: 10</p>
+          </div>
+        </div>
+        <div class="tl-item left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Apr 2026</span>
+            <h4>Final Report</h4>
+            <p>Final Report evaluates the completed project done throughout the year. Marks mentioned below includes
+              marks for Individual &amp; group reports and also Final report.</p>
+            <span class="tl-mark">19%</span>
+            <p class="tl-marks-label">Marks Allocated: 19</p>
+          </div>
+        </div>
+        <div class="tl-item right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">May 2026</span>
+            <h4>Final Presentation &amp; Viva</h4>
+            <p>Viva is held individually to assess each member&rsquo;s contribution to the project.</p>
+            <span class="tl-mark">20%</span>
+            <p class="tl-marks-label">Marks Allocated: 20</p>
+          </div>
+        </div>
+        <div class="tl-item left">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">May 2026</span>
+            <h4>Website Assessment</h4>
+            <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+            <span class="tl-mark">2%</span>
+            <p class="tl-marks-label">Marks Allocated: 2</p>
+          </div>
+        </div>
+        <div class="tl-item right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-date">Jun 2026</span>
+            <h4>Logbook</h4>
+            <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 &amp; 2.
+            </p>
+            <span class="tl-mark">4%</span>
+            <p class="tl-marks-label">Marks Allocated: 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= DOCUMENTS ============= -->
+  <section class="section section-alt" id="documents">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our Documents</p>
+        <h2>Project <span class="grad-text">Deliverables</span></h2>
+        <p class="section-sub">Reports, presentations, and project documentation.</p>
+      </div>
+
+      <!-- Project Proposal -->
+      <h3 class="sub-h">Project Proposal</h3>
+      <div class="docs-grid">
+        <a class="doc" href="docs/project-proposal/proposal-IT22154576.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span>Nipuna &mdash; IT22154576</span></a>
+        <a class="doc" href="docs/project-proposal/proposal-IT22222268.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span>Harsha &mdash; IT22222268</span></a>
+        <a class="doc" href="docs/project-proposal/proposal-IT22142146.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span>Dinithi &mdash; IT22142146</span></a>
+        <a class="doc" href="docs/project-proposal/proposal-IT22247018.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i><span>Nimesh &mdash; IT22247018</span></a>
+      </div>
+
+      <!-- Checklist 1 -->
+      <h3 class="sub-h">Checklist 1</h3>
+      <div class="docs-grid">
+        <a class="doc" href="docs/checklist-1/data-analysis-report.docx" target="_blank"><i class="fa-solid fa-file-lines"></i><span>Data Analysis Report</span></a>
+        <a class="doc" href="docs/checklist-1/master-sheet-research-papers.xlsx" target="_blank"><i class="fa-solid fa-file-excel"></i><span>Master Sheet of Research Papers</span></a>
+      </div>
+
+      <!-- Progress Presentation 1 -->
+      <h3 class="sub-h">Progress Presentation - 1</h3>
+      <div class="docs-grid">
+        <a class="doc" href="docs/progress-presentation-1/progress-presentation-1.pptx" target="_blank"><i class="fa-solid fa-file-powerpoint"></i><span>Tea Research PPT 1</span></a>
+      </div>
+
+      <!-- Research Paper -->
+      <h3 class="sub-h">Research Paper</h3>
+      <div class="docs-grid">
+        <a class="doc doc-placeholder"><i class="fa-solid fa-file-lines"></i><span>Upload files to docs/research-paper/</span></a>
+      </div>
+
+      <!-- Progress Presentation 2 -->
+      <h3 class="sub-h">Progress Presentation - 2</h3>
+      <div class="docs-grid">
+        <a class="doc doc-placeholder"><i class="fa-solid fa-file-powerpoint"></i><span>Upload files to docs/progress-presentation-2/</span></a>
+      </div>
+
+      <!-- Final Report -->
+      <h3 class="sub-h">Final Report &amp; Presentation</h3>
+      <div class="docs-grid">
+        <a class="doc doc-placeholder"><i class="fa-solid fa-file-pdf"></i><span>Upload files to docs/final-report/</span></a>
+      </div>
+
+      <!-- Checklist 2 -->
+      <h3 class="sub-h">Checklist 2</h3>
+      <div class="docs-grid">
+        <a class="doc doc-placeholder"><i class="fa-solid fa-clipboard-check"></i><span>Upload files to docs/checklist-2/</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= TEAM ============= -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Meet Our Team</p>
+        <h2>The People Behind <span class="grad-text">TeaVision</span></h2>
+        <p class="section-sub">Supervisors and student researchers driving the project.</p>
+      </div>
+
+      <h3 class="sub-h center">Supervisors</h3>
+      <div class="grid grid-2">
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h4>Supervisor</h4>
+          <p>Ms. Wishalya Tissera</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Sri Lanka Institute of Information Technology</p>
+          <p class="member-dept">Faculty of Computing</p>
+        </div>
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+          <h4>Co-Supervisor</h4>
+          <p>Ms. Ishara Weerathunga</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Sri Lanka Institute of Information Technology</p>
+          <p class="member-dept">Faculty of Computing</p>
+        </div>
+      </div>
+
+      <h3 class="sub-h center">Research Team</h3>
+      <div class="grid grid-4">
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h4>Team Leader</h4>
+          <p>Nipuna Abeysekara</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Faculty of Computing</p>
+          <p class="member-comp">Freshness Grading &amp; Inspection</p>
+        </div>
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h4>Team Member</h4>
+          <p>Harsha Waduthanthri</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Faculty of Computing</p>
+          <p class="member-comp">Yield Logbook OCR &amp; Forecasting</p>
+        </div>
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h4>Team Member</h4>
+          <p>Dinithi Wijerathne</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Faculty of Computing</p>
+          <p class="member-comp">Disease Detection &amp; Mobile Capture</p>
+        </div>
+        <div class="member">
+          <div class="avatar"><i class="fa-solid fa-user-graduate"></i></div>
+          <h4>Team Member</h4>
+          <p>Nimesh Bandaranayake</p>
+          <span class="org">SLIIT</span>
+          <p class="member-dept">Faculty of Computing</p>
+          <p class="member-comp">Smart Auction &amp; Web Dashboard</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= CONTACT ============= -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Contact Us</p>
+        <h2>Have Questions About <span class="grad-text">TeaVision?</span></h2>
+        <p class="section-sub">Reach out for collaboration, dataset access, or demo requests.</p>
+
+        <div class="contact-info">
+          <div><i class="fa-solid fa-envelope"></i><span>nipunaabeysekara2001@gmail.com</span></div>
+          <div><i class="fa-solid fa-location-dot"></i><span>SLIIT, Malabe, Sri Lanka</span></div>
+          <div><i class="fa-solid fa-globe"></i><span>TeaVision Research Group</span></div>
+        </div>
+
+        <p style="margin-top:28px; color:var(--muted); font-size:0.92rem;">
+          Hope this project helped you in some manner. Thank you!<br />
+          &mdash; Team TeaVision
+        </p>
+      </div>
+
+      <form class="contact-form"
+        onsubmit="event.preventDefault(); alert('Thanks! We will get back to you soon.'); this.reset();">
+        <label>Name<input type="text" required placeholder="Enter your name" /></label>
+        <label>Email Address<input type="email" required placeholder="Enter your email" /></label>
+        <label>Message or Query<textarea rows="5" required placeholder="Type your message"></textarea></label>
+        <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand">
+          <span class="brand-leaf"><i class="fa-solid fa-leaf"></i></span>
+          <span class="brand-text">TeaVision</span>
+        </a>
+        <p class="footer-tag">TeaVision &mdash; AI-Driven Innovations to Enhance Tea Production and Quality in Sri
+          Lanka.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="#research">Research</a>
+        <a href="#solution">Solution</a>
+        <a href="#documents">Documents</a>
+        <a href="#team">Team</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>nipunaabeysekara2001@gmail.com</p>
+        <p>SLIIT, Malabe, Sri Lanka</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> TeaVision Research Group &middot; All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

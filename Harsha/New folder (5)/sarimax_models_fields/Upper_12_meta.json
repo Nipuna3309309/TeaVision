@@ -1,0 +1,41 @@
+{
+  "FieldKey": "Upper_12",
+  "order": [
+    0,
+    1,
+    1
+  ],
+  "seasonal_order": [
+    0,
+    1,
+    1,
+    12
+  ],
+  "USE_EXOG": true,
+  "EXOG_COLS": [
+    "Rainfall_mm_lag_1",
+    "Rainfall_mm_lag_2",
+    "Rainfall_mm_lag_3",
+    "Wet_Days_Count_lag_1",
+    "Wet_Days_Count_lag_2",
+    "Wet_Days_Count_lag_3",
+    "Plucking_Rounds_lag_1",
+    "Plucking_Rounds_lag_2",
+    "Plucking_Rounds_lag_3",
+    "Fertilizer_percentage_lag_1",
+    "Fertilizer_percentage_lag_2",
+    "Fertilizer_percentage_lag_3",
+    "Fertilizer_Ratio_lag_1",
+    "Fertilizer_Ratio_lag_2",
+    "Fertilizer_Ratio_lag_3",
+    "is_zero_yield",
+    "months_since_zero"
+  ],
+  "USE_LOG1P": true,
+  "ZERO_EPS": 5.0,
+  "CLIP_Q": 0.99,
+  "CAP_VALUE": 340.9599999999999,
+  "data_start": "2013-09-01",
+  "data_end": "2024-05-01",
+  "n_obs": 129
+}

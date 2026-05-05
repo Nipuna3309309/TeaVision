@@ -1,0 +1,60 @@
+{
+  "classes": [
+    "Black_Tea",
+    "Green_Tea",
+    "White_Tea",
+    "Oolong_Tea",
+    "Herbal_Tea",
+    "Peppermint_Tea"
+  ],
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "class_stats": {
+    "Black_Tea": {
+      "train": 135,
+      "val": 28,
+      "test": 30,
+      "total": 193
+    },
+    "Green_Tea": {
+      "train": 126,
+      "val": 27,
+      "test": 28,
+      "total": 181
+    },
+    "Herbal_Tea": {
+      "train": 146,
+      "val": 31,
+      "test": 32,
+      "total": 209
+    },
+    "Oolong_Tea": {
+      "train": 121,
+      "val": 26,
+      "test": 27,
+      "total": 174
+    },
+    "Peppermint_Tea": {
+      "train": 110,
+      "val": 23,
+      "test": 25,
+      "total": 158
+    },
+    "White_Tea": {
+      "train": 130,
+      "val": 27,
+      "test": 29,
+      "total": 186
+    }
+  },
+  "total": 1101,
+  "notes": [
+    "Images scraped from Bing/Google image search",
+    "Manual audit required before training",
+    "Delete non-representative images from raw/ folder",
+    "Use Macro F1 for evaluation due to potential imbalance"
+  ]
+}

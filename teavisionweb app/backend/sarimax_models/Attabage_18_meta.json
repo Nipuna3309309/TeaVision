@@ -1,0 +1,41 @@
+{
+  "FieldKey": "Attabage_18",
+  "order": [
+    1,
+    1,
+    1
+  ],
+  "seasonal_order": [
+    1,
+    0,
+    1,
+    12
+  ],
+  "USE_EXOG": true,
+  "EXOG_COLS": [
+    "Rainfall_mm_lag_1",
+    "Rainfall_mm_lag_2",
+    "Rainfall_mm_lag_3",
+    "Wet_Days_Count_lag_1",
+    "Wet_Days_Count_lag_2",
+    "Wet_Days_Count_lag_3",
+    "Plucking_Rounds_lag_1",
+    "Plucking_Rounds_lag_2",
+    "Plucking_Rounds_lag_3",
+    "Fertilizer_percentage_lag_1",
+    "Fertilizer_percentage_lag_2",
+    "Fertilizer_percentage_lag_3",
+    "Fertilizer_Ratio_lag_1",
+    "Fertilizer_Ratio_lag_2",
+    "Fertilizer_Ratio_lag_3",
+    "is_zero_yield",
+    "months_since_zero"
+  ],
+  "USE_LOG1P": true,
+  "ZERO_EPS": 5.0,
+  "CLIP_Q": 0.99,
+  "CAP_VALUE": 498.3100000000004,
+  "data_start": "2015-10-01",
+  "data_end": "2022-03-01",
+  "n_obs": 78
+}

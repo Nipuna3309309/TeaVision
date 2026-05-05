@@ -1,0 +1,1091 @@
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  1 
+Project ID: 25-26J-133 
+ 
+Project Title: AI-Driven Innovations to Enhance Tea Production and Quality in Sri Lanka’s  
+Mid-Country 
+ 
+1. Introduction 
+1.1. Background: 
+Sri Lanka’s plantation economy remains strongly supported by the tea sector, which 
+contributes substantially to export revenue and rural livelihoods, particularly through 
+smallholder producers. However, decision-making across the tea value chain is 
+frequently constrained by manual inspection practices, delayed reporting, and limited 
+access to field-level analytics. These limitations reduce consistency in quality 
+assessment, weaken early intervention in crop risks, and restrict market 
+responsiveness. 
+Four operational gaps are commonly observed. First, freshness grading and tea-type 
+identification are often performed manually, resulting in variability across inspectors 
+and locations. Second, yield planning is affected by uncertainty in weather, field 
+conditions, and management practices, limiting the ability to anticipate crop output 
+and optimize resource allocation. Third, demand estimation and auction planning 
+typically rely on historical trends and expert judgment, which can be insufficient under 
+market volatility. Fourth, disease identification and treatment guidance are often 
+delayed due to limited expert availability, leading to avoidable yield losses and quality 
+degradation. 
+To address these issues, a mobile-based, data-driven decision support application is 
+being developed as a student-led data science project, with a focus on accessibility for 
+smallholder communities. The system is designed to integrate (i) automated freshness 
+grading and tea-type classification, (ii) predictive yield analytics, (iii) market demand 
+forecasting for smarter auction planning, and (iv) AI-based tea leaf disease and pest 
+detection with treatment guidance. By enabling rapid field-level assessments and 
+actionable recommendations, the proposed solution aims to improve consistency, 
+efficiency, and scalability of tea-sector decision-making in Sri Lanka. 
+ 
+ 
+1.2. Research Problem: 
+The Sri Lankan tea industry, though vital to the economy, struggles with productivity, 
+quality, and sustainability. Farmers face inconsistent plucking, quality loss, and 
+undetected disease and pest outbreaks, while factories and auction stakeholders 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  2 
+depend on manual grading, limited forecasting, and inefficient planning, leading to 
+reduced competitiveness. 
+ 
+1.3. Objectives: 
+1) To develop an automated tea leaf freshness grading and tea type classification 
+module using computer vision techniques, reducing subjectivity and variability 
+associated with manual inspection. 
+2) To implement tea yield analytics and digitization module that converts 
+handwritten logbooks into structured datasets and models environmental, 
+management, and historical yield factors to deliver accurate forecasts and support 
+data‑driven estate planning. 
+3) To forecast Sri Lanka’s tea market demand and support smart auction planning by 
+developing a weekly, elevation-aware decision-support framework that integrates 
+time-series forecasting, machine learning, and auction-behavior simulation to 
+capture long-term market trends, short-term demand shocks, and seasonal 
+variability. 
+4) To design an AI-based tea leaf disease, pest, invasive species, and seasonal 
+outbreak prediction module capable of identifying locally specific major leaf and 
+pest diseases from images, detecting invasive plants, and forecasting seasonal 
+disease risk patterns, while providing actionable, expert-aligned treatment and 
+management recommendations. 
+5) To integrate all analytical components into a mobile application that enables real-
+time, field-level access for smallholder farmers with minimal technical expertise. 
+ 
+ 
+It Number Objective Objective number  
+IT22154576 Automated Tea Freshness 
+Grading and  
+1 
+IT22222268  Predictive Analytics for Tea Crop 
+Yield Management 
+2 
+IT 22247018  Tea Market Demand Forecasting 
+and Smart Auction Planning 
+3 
+IT22142146 AI-Based Leaf Disease, Pest & 
+Invasive Species Detection and 
+Treatment Guidance 
+4 
+2. Data Exploration 
+2.1. Data Collection 
+ 
+To build a real-world dataset, we visited smallholder tea estates and collected freshly 
+plucked leaves directly from the field. For each sample, the leaves were spread in a 
+single layer on a clean, light-coloured (white) cloth to create a consistent, low-noise 
+background. Images were captured outdoors under daylight using our dedicated data-
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  3 
+collection mobile application, keeping the camera angle and distance as consistent as 
+possible across sessions. This setup reduces background variation and helps the model 
+focus on leaf colour, texture, and shape—while still preserving natural lighting changes 
+that occur in practical field conditions. 
+In addition, we visited several tea estates to gain field-level knowledge and capture 
+real plantation images of major locally relevant tea leaf diseases, pests, and invasive 
+plants. These field photographs were further supplemented with Kaggle datasets and 
+curated agricultural references to improve dataset diversity. 
+ 
+2.2. Dataset Description: 
+ 
+Data source Description Resource Size Key 
+attributes 
+Self-collected 
+Tea Leaf 
+Image Dataset 
+(Smallholder 
+Estates) 
+Field-
+collected 
+image 
+dataset of 
+freshly 
+harvested tea 
+leaves 
+captured 
+under natural 
+daylight 
+conditions 
+for quality 
+and 
+freshness 
+analysis 
+Dataset 
+Custom mobile data-
+collection application; 
+locally stored image dataset 
+275 original 
+images, 
+augmented 
+to 1,000 
+samples for 
+model 
+training 
+RGB images, 
+daylight 
+illumination, 
+uniform 
+background, 
+leaf colour, 
+texture, 
+shape, 
+freshness 
+labels 
+Tea types 
+dataset 
+Curated 
+image 
+dataset 
+representin
+g different 
+processed 
+tea types 
+used for tea 
+type 
+classificatio
+n 
+Publicly available 
+datasets and curated 
+online sources; locally 
+consolidated dataset 
+Pending RGB images, 
+tea type 
+labels (e.g., 
+black, 
+green, 
+white), 
+colour 
+variation, 
+texture 
+patterns, 
+processed 
+leaf 
+characteristi
+cs 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  4 
+Self-collected 
+Tea Yield 
+Logbook 
+Images 
+Dataset (Mid-
+Country 
+Estates) 
+Self-
+collected 
+images of 
+manually 
+written 
+pruning-
+cycle yield 
+log books 
+from two 
+mid-country 
+estates, 
+captured for 
+OCR-based 
+digitization 
+and scalable 
+to other 
+estates 
+using the 
+same 
+standard 
+template. 
+Self-collected estate log 
+book images (local 
+storage) 
+175 log 
+book 
+images 
+from 2 
+estates in 
+the mid 
+country  
+Division/fiel
+d IDs, dates, 
+monthly 
+and cycle 
+yields, bush 
+age, 
+rainfall,wet 
+days, 
+pruning 
+year/style, 
+fertilizer 
+and 
+dolomite 
+entries,Soil 
+pH, remarks  
+Mid-Country 
+Estate-Level 
+Monthly 
+Yield Dataset 
+(Field-wise, 
+10 Years) 
+Field-wise 
+historical 
+monthly 
+yield data 
+with 
+environmen
+tal and 
+managemen
+t factors 
+field-wise-yield-
+dataset.xlsx 
+5,821 rows 
+and 22 
+columns 
+across 10 
+years 
+Division, 
+Field_ID, 
+Year, 
+Month, 
+Planting_Ye
+ar, bush age, 
+pruning 
+info, 
+rainfall, wet 
+days, 
+fertilizer 
+details, 
+plucking 
+rounds, soil 
+pH, Yiled 
+total 
+Tea Auction 
+Data 
+transaction 
+Dataset 
+2023-2025 
+Colombo 
+Tea Auction 
+transaction 
+records 
+DATA TABLE-2023-
+2025 SALE 50.xlsx 
+(Sheet: DATA) 
+1.5M 
+rows,26 
+cols across 
+3 years 
+ 
+YEAR, SALE 
+NO, GRADE, 
+QTY, PRICE, 
+ELE1, 
+BROKER, 
+FACTORY, 
+BUYER, 
+MFREF 
+TeaLeaves 
+Dataset 
+Image 
+dataset 
+Collected from local tea 
+estates, and supplemented 
+~6,000+ 
+annotated 
+Disease 
+class label,  
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  5 
+containing 
+healthy tea 
+leaves and 
+major tea 
+leaf 
+diseases 
+and pests. 
+Includes 
+common 
+field level 
+conditions 
+and 
+symptom 
+variations. 
+ 
+- Blister 
+Blight 
+- Brown 
+Blight  
+- Grey Blight 
+- Red Rust  
+- Healthy  
+- Helopeltis  
+with Kaggle datasets and 
+curated academic 
+references. 
+images 
+across 6 
+classes 
+(Healthy, 
+Blister 
+Blight, 
+Brown 
+Blight, 
+Grey 
+Blight, Red 
+Rust, 
+Helopeltis) 
+RGB images 
+- Color 
+images used 
+for visual 
+pattern 
+recognition,  
+leaf texture 
+- Used by 
+CNN to 
+identify 
+disease 
+patterns,  
+color 
+variation, 
+visible 
+symptoms, 
+background 
+variation 
+InvasiveSpec
+ies Dataset 
+Image 
+dataset 
+containing 
+invasive 
+plant 
+species 
+affecting 
+tea 
+plantations.  
+ 
+- Lantana 
+camara 
+- Tridax 
+procumben
+s 
+Field photographed from 
+tea growing regions, 
+supplemented with Kaggle 
+invasive species datasets 
+and curated 
+online/agricultural 
+reference sources. 
+~1,500+ 
+annotated 
+images 
+across 2 
+invasive 
+species 
+classes 
+(Lantana 
+camara, 
+Tridax 
+procumbe
+ns) 
+Species 
+label, RGB 
+image, leaf 
+shape, 
+texture 
+patterns, 
+color 
+variations, 
+growth 
+characteristi
+c, 
+background 
+conditions 
+Tea Season 
+Disease 
+Dataset 
+Structured 
+dataset 
+tea_season_disease_datase
+t.xlsx  
+5,000+ 
+rows with 
+Month, 
+Season, 
+Region, 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  6 
+containing 
+seasonal 
+and 
+environmen
+tal 
+conditions 
+linked with 
+major tea 
+leaf 
+diseases, 
+used for 
+predicting 
+disease risk 
+levels 
+across 
+different 
+months and 
+regions in 
+Sri Lanka. 
+(locally prepared dataset 
+based on Sri Lankan 
+seasonal patterns and 
+estate level observations) 
+8 key 
+columns 
+Temperatur
+e, Humidity, 
+Rainfall, 
+Disease_Lab
+el, 
+Risk_Level 
+ 
+2.3. Suitability Analysis 
+2.3.1. Relevance to Individual Research Objectives: 
+(Explain how well each dataset aligns with your research problem and objectives) 
+ 
+ 1 2 3 4 
+Data source 1:Tea 
+Freshness dataset 
+✓ 
+ 
+   
+Data source 2: 
+Self-collected Tea 
+Yield Logbook 
+Images Dataset 
+(Mid-Country 
+Estates) 
+ 
+ ✓ 
+ 
+  
+Data source 3: 
+Mid-Country 
+Estate-Level 
+Monthly Yield 
+Dataset (Field-
+wise, 10 Years) 
+ 
+ ✓ 
+ 
+  
+Data source 4: 
+Auction 
+  ✓  
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  7 
+transaction data 
+(2023–2025) 
+Data source 5: 
+TeaLeaves 
+Dataset 
+   ✓ 
+ 
+Data source 6: 
+InvasiveSpecies 
+Dataset 
+   ✓ 
+ 
+Data source 7: 
+Tea Season 
+Disease Dataset 
+   ✓ 
+ 
+ 
+3. Methodology 
+3.1. Data Preprocessing: 
+(Mention data transformation techniques done in each dataset for each objective.) 
+Ex: 
+Data Cleaning, Data Normalization, Data Standardization, Data Encoding (e.g., One-Hot 
+Encoding, Label Encoding), Handling Missing Data (e.g., Imputation or Removal), 
+Data Aggregation, Feature Engineering, Outlier Detection and Handling, Data Scaling, 
+Data Discretization, Dimensionality Reduction (e.g., PCA), Date/Time Transformation, 
+Data Integration (Merging or Joining), Data Mapping, Data Type Conversion. 
+ 
+ 
+ 
+ 
+Objective 1 
+ Transformation technique 
+Data 
+source 
+1 
+• Image Resizing 
+• Pixel Normalization 
+• Colour Space Conversion 
+• Grayscale Conversion 
+• Data Augmentation 
+• Background Masking 
+ 
+Objective 3 
+ 
+Data source Transformation technique 
+Data source 1: 
+Auction 
+Transaction 
+Dataset (2023–
+2025 Excel) 
+Schema Harmonization (standardize column names across files) 
+Type Casting (PRICE, QTY → numeric using 
+to_numeric(errors="coerce")) 
+Missing / Invalid Handling (drop/flag rows with missing PRICE or QTY) 
+Text Cleaning (trim spaces, unify GRADE labels, fix case/typos) 
+• Elevation Validation (keep only ELE1 ∈ {Low, Medium, High}) 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  8 
+• Duplicate Removal (remove repeated rows after merging files) 
+• Outlier Control (flag/cap extreme PRICE and very low QTY to reduce 
+distortion) 
+• Weekly Aggregation (group by YEAR + SALE NO + GRADE (+ ELE1); 
+compute avg_price = Σ(PRICE×QTY)/Σ(QTY) and total_qty = 
+Σ(QTY)) 
+• Week-Date Mapping (convert SALE NO to a continuous 
+weekly date index; handle year boundaries) 
+ 
+ 
+ 
+ 
+Objective 4: AI-Based Leaf Disease, Pest and Treatment Guidance 
+ Transformation technique 
+Data source 5: 
+TeaLeaves 
+Dataset 
+• Image Resizing (224×224 for CNN input) 
+• Pixel Normalization (0–1 scaling) 
+• Label Encoding (6 disease/pest classes) 
+• Data Augmentation (rotation, flipping, brightness adjustment) 
+• Noise Reduction (blur filtering for unclear samples) 
+• Background Variation Handling (field-level robustness) 
+Data source 6: 
+InvasiveSpecies 
+Dataset 
+• Image Resizing (CNN compatible size) 
+• Normalization and Standardization 
+• Class Label Encoding (2 invasive species categories) 
+• Data Augmentation (zoom, rotation, contrast adjustment) 
+• Occlusion Handling (training with complex plantation 
+backgrounds) 
+Data source 7: 
+Seasonal Risk 
+Prediction 
+Dataset 
+• Missing Value Handling (imputation for climate gaps) 
+• Feature Encoding (Season, Region → Label/One-Hot Encoding) 
+• Data Scaling (Temperature, Humidity, Rainfall normalization) 
+• Outlier Detection (extreme rainfall/temperature removal) 
+• Train–Test Splitting (balanced disease-risk distribution) 
+ 
+ 
+ 
+3.2. Scalability 
+ 
+Data source 1: 
+ 
+The self-collected Tea Leaf Image Dataset currently contains 275 original images augmented 
+to 1,000 samples. The data collection infrastructure is designed for longitudinal scalability 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  9 
+through a batch management system with unique batch identifiers 
+(BATCH_YYYYMMDD_HHMMSS), sequential image indexing for traceability, and JSON 
+sidecar metadata files that enable automated ingestion into database systems. Automated 
+quality gates maintain dataset consistency as collection scales across multiple operators, 
+with rejection logging identifying systematic capture issues for operator training. The 
+TeaVision mobile application supports configurable capture resolutions (2 MP to 12 MP+) 
+accommodating diverse device capabilities, while asynchronous processing with coroutine-
+based concurrency maintains UI responsiveness. The standardized input preprocessing 
+pipeline is compatible with pre-trained CNN architectures (VGG, ResNet, MobileNet) 
+enabling transfer learning, and batch-organized data supports chronological train/validation 
+splits for incremental learning as the dataset grows. 
+ 
+Data source 2: 
+ 
+The Pruning Cycle Yield Logbook dataset currently includes 175 images across two 
+mid‑country estates. In this dataset there are two distinct pruning‑cycle templates, each 
+corresponding to a different plantation, and within each plantation the same template is 
+reused for all estates. Together these two templates cover approximately 35 estates, so 
+once the digitization pipeline is configured for each template, it can scale by simply ingesting 
+additional estate yield books without changing the extraction logic. 
+ 
+Data source 3: 
+ 
+The monthly yield forecasting dataset consists of 5,821 field‑wise records with 22 variables 
+from a single mid‑country estate over 2012–2025, providing enough historical coverage and 
+management variation to train and validate estate‑level monthly yield prediction models. 
+Each new year’s data can be appended as additional rows to this dataset as it becomes 
+available. 
+ 
+Data source 4: 
+The Auction transaction dataset is large 1.5M rows across 3 years, which is sufficient for 
+robust weekly aggregation and time-series training. Weekly aggregation reduces noise and 
+compresses the dataset into manageable time-series sequences per grade/elevation. The 
+system is scalable by adding new yearly auction files and retraining models periodically. 
+ 
+Data source 5:  
+The TeaLeaves Dataset, which contains more than 6,000 labeled images across six main tea 
+leaf disease and pest categories, gives a good amount of data to train CNN and object 
+detection models effectively. Since the images come from local tea estates and Kaggle, the 
+dataset includes different lighting conditions, symptom patterns, and backgrounds, making it 
+useful for real field applications. 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  10 
+Data source 6: 
+The InvasiveSpecies Dataset, with over 1,500 images of Lantana camara and Tridax 
+procumbens, provides a strong starting point for detecting invasive species. It can be 
+improved using data augmentation and by collecting more invasive species images from Sri 
+Lankan plantations. Overall, both TeaLeaves Dataset and InvasiveSpecies Datasets can be 
+extended later to include more diseases, pests, and invasive plant species, which supports 
+future improvements and real-world use of the system. 
+Data source 7: 
+The Tea Season Disease Dataset, with around 5,000 records, provides a solid base for 
+seasonal tea disease risk prediction using machine learning. It includes key factors such as 
+month, season, region, temperature, humidity, rainfall, and disease labels, helping the 
+models learn climate-related disease patterns. The dataset is scalable because more years of 
+weather data, additional regions, and new disease categories can be added easily in the 
+same tabular structure, allowing continuous improvement through future expansion and 
+retraining. 
+ 
+3.3. Feature extraction 
+ 
+ 
+Objective 1: Tea Leaf Freshness Grading 
+A total of 25 hand-crafted features were extracted from each leaf image across four 
+categories: 
+Colour Features (6): Mean Hue, Mean Saturation, Mean Value (HSV colour space over leaf-
+masked pixels), Greenness Index (composite metric: (1 − |meanHue − 120| / 60) × 
+meanSaturation), Brownness Index (oxidation indicator for hue ∈ [20°, 60°]), and Colour 
+Uniformity (1 / (1 + hueVariance / 1000)). 
+Texture Features (2): Blur Score (Laplacian variance × 10 on 400px-width scaled image) and 
+Background Variance (standard deviation of luminance in peripheral 15% edge regions). 
+Morphological Features (6): Leaf Area (pixels and cm²), Leaf Width (cm), Leaf Height (cm), 
+Leaf Coverage (%), and Aspect Ratio — derived from binary segmentation masks with 
+optional QR-code calibration for real-world measurements. 
+Quality Metrics (4): Resolution (MP), Brightness (mean luminance), Glare Percentage, and 
+Segmentation Confidence (0.9 for ML-based, 0.7 for colour-based fallback). 
+Segmentation uses a dual approach: a TensorFlow Lite model (256×256 input, softmax 
+threshold 0.5) as the primary method, with a colour-based fallback using adaptive brightness 
+thresholds and greenish-tint validation for devices without ML acceleration. 
+ 
+Objective 2: Predictive Analytics for Tea Crop Yield Management 
+ 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  11 
+ 
+ 
+Objective 3: Tea Market Demand Forecasting and Smart Auction Planning 
+ 
+A total of 30 engineered time-series and market-intelligence features were extracted for each 
+Grade × Elevation × Week record to forecast demand signals (price pressure + buyer activity) 
+and support smart auction planning. Features were derived across five categories: 
+Market Price Dynamics :Lagged and trend-based price indicators were computed to capture 
+short-term and seasonal market movement: Price(t−1), Price(t−2), Price(t−4), 4 -week Rolling 
+Mean, 8-week Rolling Mean, 4 -week Rolling Std (volatility), Week -over-Week Price Change 
+(%), and Momentum Index (rolling mean of WoW change over last 3 weeks). 
+Supply & Volume Pressure Features:  Auction supply signals were modelled using quantity -
+based indicators: Offered Quantity(t−1), (t−2), (t−4), 4-week Rolling Mean Quantity, Quantity 
+Shock Flag (1 if quantity > mean + 1.5×std), Scarcity Index (1 / (1 + normalized quantity)) and 
+Grade-Mix Share (grade quantity / total weekly quantity within the elevation category). 
+Buyer Demand & Competition Features:  Demand strength was captured using buyer -side 
+proxies: Active Buyer Count, Top-3 Buyer Share, Buyer Concentration (HHI), Competition Ratio 
+(buyers / lots), Repeat-Buyer Rate (buyers appearing in both current and previous week), and 
+Bid Intensity Proxy (normalized price increase under limited supply conditions). 
+Demand Target Construction (Forecast Label)  : For modelling demand, the target variable 
+was defined as a  Demand Pressure Score, computed using a weighted combination of price 
+uplift, buyer participation, and supply scarcity (higher prices with lower offered quantities and 
+higher buyer competition imply stronger demand). This demand signal is then used to 
+recommend optimal offering quantities, grade prioritization, and reserve price guidance for 
+smart auction planning. 
+ 
+ 
+ 
+ 
+ 
+ 
+Objective 4: AI-Based Leaf Disease, Pest and Treatment Guidance 
+Image-Based Feature Extraction: For tea leaf disease, pest, and invasive plant identification, 
+feature extraction was performed using CNN models. It automatically learns discriminative 
+visual characteristics from input images. 
+• Colour Variations: rust patches, browning, yellowing, and abnormal discoloration caused 
+by infections. 
+• Symptom and Spot Patterns: blight lesions, fungal marks, and irregular disease spread 
+across leaf surfaces. 
+• Shape and Structural Features: leaf deformation, holes, and chewing marks linked to 
+pest activity. 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  12 
+• Invasive Species Characteristics: distinctive leaf shape, vein structure, and plant 
+morphology for species such as Lantana camara and Tridax procumbens. 
+ 
+Feature Preparation and Enhancement: To improve robustness under real field conditions,  
+• Resizing and pixel normalization 
+• Data augmentation (rotation, flipping, brightness adjustments) 
+• Noise and background variation reduction 
+ 
+Seasonal Disease Feature Extraction: For seasonal disease prediction dataset, structured 
+feature extraction was performed using key climatic, temporal variables such as, 
+• Month and seasonal indicators 
+• Regional conditions 
+• Temperature, humidity, and rainfall patterns 
+• Disease risk labels 
+ 
+ 
+4. Modelling and Results 
+The results section should present the key findings derived from analyzing the data. 
+It should answer the research questions or hypotheses posed at the beginning of the 
+study, based on the methods and techniques applied during the analysis. 
+4.1. Key Insights: 
+Data Quality Analysis (Objective 1: Tea Leaf Freshness Grading): 
+Analysis of the quality assessment pipeline across collected samples showed that the 
+overall quality pass rate was 78.4%, with individual metrics as follows: Resolution pass 
+rate 98.5%, Blur Score 85.2%, Brightness 91.3%, Glare 94.7%, and Background 88.9%. 
+Multiple simultaneous failures were rare, indicating the quality gates operate 
+independently and effectively. 
+ 
+Quality Metric Pass Rate Primary Failure Mode 
+Resolution 98.5% Operator selection of low-resolution mode 
+Blur Score 85.2% Handheld motion during capture 
+Brightness 91.3% Shaded capture locations 
+Glare 94.7% Direct sunlight on leaf surface 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  13 
+Background 88.9% Insufficient background cloth coverage 
+Overall Pass 78.4% Multiple simultaneous failures rare 
+ 
+Data Quality Analysis (Objective 2: Predictive Analytics for Tea Crop Yield Management): 
+ 
+ 
+ 
+ 
+Data Quality Analysis (Objective 3: Tea Market Demand Forecasting & Smart Auction Planning) 
+An assessment of the auction + external feature engineering pipeline showed that most records 
+were usable for weekly demand forecasting, with issues mainly coming from missing price/quantity 
+entries, inconsistent grade/elevation labeling, and macro-data alignment gaps. Importantly, multi-
+metric failures were uncommon, suggesting that the quality gates capture different independent 
+failure modes (good for reliable filtering rather than over-filtering). 
+ 
+Quality Metric Pass Rate Primary Failure Mode 
+Year Validity (2000–2100) 100.0% Not observed (all YEAR 
+values valid) 
+Sale/Week Validity (1–60) 100.0% Not observed (all SALE NO 
+values valid) 
+Grade Presence 100.0% Not observed (GRADE always 
+present) 
+Elevation Validity 
+(Low/Medium/High) 100.0% Not observed (ELE1 
+consistently labeled) 
+Quantity Numeric + Positive 100.0% Not observed (QTY clean and 
+>0) 
+Price Numeric + Positive 100.0% Not observed (PRICE clean 
+and >0) 
+Price Plausibility Gate (100–
+10,000 LKR) 98.98% 
+Rare extreme high prices 
+(special lots / outliers / entry 
+scale issues) 
+Quantity Plausibility Gate (≥1 
+unit) 99.99% 
+Very small QTY  likely 
+representing sample lots / unit 
+inconsistencies 
+Weekly Aggregation Validity  100.0% Not observed (weekly 
+calculations stable) 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  14 
+Weekly Avg-Price Plausibility 
+(100–10,000 LKR) 91.67% 
+Weekly averages inflated when 
+very high price combines with 
+low total_qty 
+Overall Pass (Core + 
+Plausibility gates) 98.98% Dominated by the price outlier 
+cases 
+ 
+ 
+ 
+Data Quality Analysis (Objective 4: AI-Based Leaf Disease, Pest and Treatment Guidance) 
+Most disease, pest, invasive species, and seasonal prediction samples were suitable for CNN based 
+modelling. The main challenges came from lighting variations, similar symptoms between some 
+diseases, and occasional background noise in field images. Overall, quality checks ensured reliable 
+data for training. 
+ 
+Quality Metric Pass Rate Primary Issue 
+Label Availability (6 Classes) 100%   All images correctly labeled 
+Resolution Validity (≥224×224) 97.6% Few low-resolution samples 
+Blur Detection 89.4% Motion blur during capture 
+Lighting Consistency 90.8% Overexposure in direct sunlight 
+Background Noise Control 88.7% Complex field backgrounds 
+Overall Pass Rate 91.2% Mainly affected by blur + 
+background variation 
+ 
+Tea Leaf Disease & Pest Detection Results: A CNN-based classifier trained on the TeaLeaves dataset 
+(~6,000 images across 6 classes) achieved strong performance in identifying healthy leaves and 
+major Sri Lankan tea diseases and pests. 
+Model Metric Result Key Observation 
+Training Accuracy ~95% Learned disease-specific visual 
+patterns effectively 
+Validation Accuracy ~88–90% Generalized well under field-level 
+variations 
+Most Confused Classes Blister vs Brown Blight Similar lesion patterns caused 
+minor overlap 
+ 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  15 
+Invasive Species Detection Quality: The InvasiveSpecies dataset (~1,500 images of Lantana camara 
+and Tridax procumbens) provided a solid foundation for weed detection with minor errors. 
+Quality Metric Pass Rate Primary Issue 
+Species Label Presence 100% All samples labeled correctly 
+Shape Feature Visibility 91.8% Partial occlusion in dense weeds 
+Overall Pass Rate 92.0% Mostly affected by background 
+complexity 
+ 
+ 
+ 
+ 
+ 
+4.2. Challenges Faced During Data Analysis: 
+ 
+The analysis of our datasets presented several challenges, primarily during the data 
+gathering and preprocessing phases. The key challenges encountered include: 
+ 
+1. Data Collection Challenges 
+ 
+• Freshness grade labelling needed domain expert judgment, which introduces 
+subjectivity. Different assessors may give different grades to borderline samples. To 
+reduce this, all 275 original labels were manually audited for consistency. 
+ 
+• Early tea leaf collection was biased toward fresh samples because field visits coincided 
+with recent plucking. Fresh leaves were easy to find, while aged or damaged samples 
+had to be collected deliberately. 
+ 
+• Although public datasets were available, collecting data that matches Sri Lankan tea 
+estate conditions was difficult. Field data collection required consistent lighting, camera 
+angles, and backgrounds.  
+• In some cases, certain disease, pest, or invasive species categories had fewer samples, 
+creating class imbalance. 
+• Invasive species images also required careful collection because plants were often mixed 
+with surrounding weeds. 
+• Auction data came from several Excel files (2023–2025). Even though the columns were 
+mostly the same, small formatting differences (extra spaces, numbers stored as text, 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  16 
+naming differences) had to be cleaned before merging, and that can hide small 
+inconsistencies. 
+• Real demand data (actual bids, buyer competition, order books, broker negotiations) 
+were not available. So demand had to be estimated using indirect signals like price 
+changes and supply shortages, which is less accurate than having true buyer-side data. 
+• Some tea grades do not appear every week in each elevation (Low/Medium/High). This 
+creates short or broken time series for those grades, making forecasting harder and 
+forcing us to remove grades with too few data points. 
+• The dataset uses SALE NO instead of normal calendar weeks. Converting SALE NO into 
+dates requires assumptions and careful handling across year changes, and small timing 
+mismatches can affect alignment with external data. 
+ 
+2. Data Quality and Variability 
+ 
+• Different smartphone cameras reproduce colors differently and use different white balance 
+and exposure settings. This affects how well the model works across devices, especially for 
+colour-based features like greenness and brownness indices. 
+• Outdoor lighting changes (shadows from trees, cloud cover, time-of-day shifts) cause 
+brightness to vary by about ±30 units, so preprocessing normalization is needed before 
+extracting colour features. 
+• The datasets contained variations in image quality, background noise, and symptom 
+appearance. Tea leaf diseases and pest damage often look similar, such as Blister Blight and 
+Brown Blight share similar visual symptoms, which made classification more challenging. 
+• Auction and yield datasets also required careful checking due to inconsistent formatting 
+across sources. 
+ 
+3. Preprocessing and Data Cleaning Issues 
+ 
+Overlapping leaves, curled edges, and shadows create unclear boundaries during segmentation, 
+which affects the accuracy of leaf measurements like area, width, and height. 
+Session-based data splitting is needed to prevent data leakage. Images from the same capture 
+session share lighting, angles, and leaf arrangement, so randomly splitting across sessions would give 
+misleadingly high performance numbers. 
+• Several preprocessing steps were needed, such as image resizing, normalization, 
+augmentation, and label verification.  
+• Background complexity and early-stage infections sometimes reduced symptom 
+visibility, affecting feature learning.  
+• Seasonal prediction data also required consistency checks across climatic variables and 
+risk-level distributions. 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  17 
+• For yield analytics, handwritten logbooks required OCR-based digitization, where 
+unclear handwriting and missing entries affected extraction accuracy. 
+ 
+4. Handling Large-Scale Data 
+• The auction transaction dataset included over 1.5 million records, which increased 
+processing time and required aggregation into weekly trends to make forecasting 
+manageable. 
+ 
+5. Computational and Training Limitations 
+The current dataset of only 275 original images (augmented to 1,000) is relatively small for deep 
+learning, which limits how well the model can generalize to new, unseen data. Continued data 
+collection across more estates and seasons is planned to address this. 
+• Training CNN based models for disease and invasive species detection required 
+significant computational resources. 
+• Limited hardware availability increased training time and restricted the number of 
+experiments and hyperparameter tuning that could be performed. 
+ 
+ 
+ 
+5. References 
+• C. Ariyaratne, S. M. Arachchi, P. Pallewatta, K. Karunanayaka, G. Seneviratne, and T. 
+Halloluwa, “An Automated Model for Predicting Weekly Tea Auction Prices at Colombo Tea 
+Auction for Specific Elevations and Grades,” in Proc. 2024 6th Int. Conf. on Advancements in 
+Computing (ICAC), Colombo, Sri Lanka, Dec. 12–13, 2024, pp. 1–7. doi: 
+10.1109/ICAC62427.2024 
+•  D. Induruwage, C. D. Tilakaratne, and S. R. M. S. P. Rajapaksha, “Forecasting Black Tea 
+Auction Prices by Capturing Common Seasonal Patterns,” Sri Lankan Journal of Applied 
+Statistics, vol. 16, no. 3, pp. 195–208, Jan. 2016. [Online]. Available: 
+https://www.researchgate.net/publication/292213509_Forecasting_Black_Tea_Aucti 
+on_Prices_by_Capturing_Common_Seasonal_Patterns 
+• ] H. P. A. S. S. Kumarasinghe and B. L. Peiris, “Forecasting annual tea production in Sri 
+Lanka,” Tropical Agricultural Research, vol. 29, no. 1, pp. 99–110, Jan. 2018. doi: 
+10.4038/tar.v29i1.8279. 
+•  X. Liu, D. Wang, and Z. Jiang, "Simulation and analysis of bid evaluation behaviors for 
+multiattribute reverse auction," Proceedings of the IEEE International Conference on 
+Systems, Man, and Cybernetics, pp. 1635–1640, 2005, doi: 10.1109/ICSMC.2005.1571347. 
+•  Y. Zhao, Z. Wang, Y. Chen, and X. Li, “Research on the Volume Prediction of Sorting Center 
+Based on ARIMA-Random Forest,” Int. J. of Advanced Research in Computer Science, Aug. 
+2024. doi: 10.62051/f8h04675. 
+
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  18 
+ 

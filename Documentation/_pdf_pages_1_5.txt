@@ -1,0 +1,456 @@
+---PAGE 1---
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  1 
+Project ID: 25-26J-133 
+ 
+Project Title: AI-Driven Innovations to Enhance Tea Production and Quality in Sri Lanka’s  
+Mid-Country 
+ 
+1. Introduction 
+1.1. Background: 
+Sri Lanka’s plantation economy remains strongly supported by the tea sector, which 
+contributes substantially to export revenue and rural livelihoods, particularly through 
+smallholder producers. However, decision-making across the tea value chain is 
+frequently constrained by manual inspection practices, delayed reporting, and limited 
+access to field-level analytics. These limitations reduce consistency in quality 
+assessment, weaken early intervention in crop risks, and restrict market 
+responsiveness. 
+Four operational gaps are commonly observed. First, freshness grading and tea-type 
+identification are often performed manually, resulting in variability across inspectors 
+and locations. Second, yield planning is affected by uncertainty in weather, field 
+conditions, and management practices, limiting the ability to anticipate crop output 
+and optimize resource allocation. Third, demand estimation and auction planning 
+typically rely on historical trends and expert judgment, which can be insufficient under 
+market volatility. Fourth, disease identification and treatment guidance are often 
+delayed due to limited expert availability, leading to avoidable yield losses and quality 
+degradation. 
+To address these issues, a mobile-based, data-driven decision support application is 
+being developed as a student-led data science project, with a focus on accessibility for 
+smallholder communities. The system is designed to integrate (i) automated freshness 
+grading and tea-type classification, (ii) predictive yield analytics, (iii) market demand 
+forecasting for smarter auction planning, and (iv) AI-based tea leaf disease and pest 
+detection with treatment guidance. By enabling rapid field-level assessments and 
+actionable recommendations, the proposed solution aims to improve consistency, 
+efficiency, and scalability of tea-sector decision-making in Sri Lanka. 
+ 
+ 
+1.2. Research Problem: 
+The Sri Lankan tea industry, though vital to the economy, struggles with productivity, 
+quality, and sustainability. Farmers face inconsistent plucking, quality loss, and 
+undetected disease and pest outbreaks, while factories and auction stakeholders 
+---PAGE 2---
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  2 
+depend on manual grading, limited forecasting, and inefficient planning, leading to 
+reduced competitiveness. 
+ 
+1.3. Objectives: 
+1) To develop an automated tea leaf freshness grading and tea type classification 
+module using computer vision techniques, reducing subjectivity and variability 
+associated with manual inspection. 
+2) To implement tea yield analytics and digitization module that converts 
+handwritten logbooks into structured datasets and models environmental, 
+management, and historical yield factors to deliver accurate forecasts and support 
+data‑driven estate planning. 
+3) To forecast Sri Lanka’s tea market demand and support smart auction planning by 
+developing a weekly, elevation-aware decision-support framework that integrates 
+time-series forecasting, machine learning, and auction-behavior simulation to 
+capture long-term market trends, short-term demand shocks, and seasonal 
+variability. 
+4) To design an AI-based tea leaf disease, pest, invasive species, and seasonal 
+outbreak prediction module capable of identifying locally specific major leaf and 
+pest diseases from images, detecting invasive plants, and forecasting seasonal 
+disease risk patterns, while providing actionable, expert-aligned treatment and 
+management recommendations. 
+5) To integrate all analytical components into a mobile application that enables real-
+time, field-level access for smallholder farmers with minimal technical expertise. 
+ 
+ 
+It Number Objective Objective number  
+IT22154576 Automated Tea Freshness 
+Grading and  
+1 
+IT22222268  Predictive Analytics for Tea Crop 
+Yield Management 
+2 
+IT 22247018  Tea Market Demand Forecasting 
+and Smart Auction Planning 
+3 
+IT22142146 AI-Based Leaf Disease, Pest & 
+Invasive Species Detection and 
+Treatment Guidance 
+4 
+2. Data Exploration 
+2.1. Data Collection 
+ 
+To build a real-world dataset, we visited smallholder tea estates and collected freshly 
+plucked leaves directly from the field. For each sample, the leaves were spread in a 
+single layer on a clean, light-coloured (white) cloth to create a consistent, low-noise 
+background. Images were captured outdoors under daylight using our dedicated data-
+---PAGE 3---
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  3 
+collection mobile application, keeping the camera angle and distance as consistent as 
+possible across sessions. This setup reduces background variation and helps the model 
+focus on leaf colour, texture, and shape—while still preserving natural lighting changes 
+that occur in practical field conditions. 
+In addition, we visited several tea estates to gain field-level knowledge and capture 
+real plantation images of major locally relevant tea leaf diseases, pests, and invasive 
+plants. These field photographs were further supplemented with Kaggle datasets and 
+curated agricultural references to improve dataset diversity. 
+ 
+2.2. Dataset Description: 
+ 
+Data source Description Resource Size Key 
+attributes 
+Self-collected 
+Tea Leaf 
+Image Dataset 
+(Smallholder 
+Estates) 
+Field-
+collected 
+image 
+dataset of 
+freshly 
+harvested tea 
+leaves 
+captured 
+under natural 
+daylight 
+conditions 
+for quality 
+and 
+freshness 
+analysis 
+Dataset 
+Custom mobile data-
+collection application; 
+locally stored image dataset 
+275 original 
+images, 
+augmented 
+to 1,000 
+samples for 
+model 
+training 
+RGB images, 
+daylight 
+illumination, 
+uniform 
+background, 
+leaf colour, 
+texture, 
+shape, 
+freshness 
+labels 
+Tea types 
+dataset 
+Curated 
+image 
+dataset 
+representin
+g different 
+processed 
+tea types 
+used for tea 
+type 
+classificatio
+n 
+Publicly available 
+datasets and curated 
+online sources; locally 
+consolidated dataset 
+Pending RGB images, 
+tea type 
+labels (e.g., 
+black, 
+green, 
+white), 
+colour 
+variation, 
+texture 
+patterns, 
+processed 
+leaf 
+characteristi
+cs 
+---PAGE 4---
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  4 
+Self-collected 
+Tea Yield 
+Logbook 
+Images 
+Dataset (Mid-
+Country 
+Estates) 
+Self-
+collected 
+images of 
+manually 
+written 
+pruning-
+cycle yield 
+log books 
+from two 
+mid-country 
+estates, 
+captured for 
+OCR-based 
+digitization 
+and scalable 
+to other 
+estates 
+using the 
+same 
+standard 
+template. 
+Self-collected estate log 
+book images (local 
+storage) 
+175 log 
+book 
+images 
+from 2 
+estates in 
+the mid 
+country  
+Division/fiel
+d IDs, dates, 
+monthly 
+and cycle 
+yields, bush 
+age, 
+rainfall,wet 
+days, 
+pruning 
+year/style, 
+fertilizer 
+and 
+dolomite 
+entries,Soil 
+pH, remarks  
+Mid-Country 
+Estate-Level 
+Monthly 
+Yield Dataset 
+(Field-wise, 
+10 Years) 
+Field-wise 
+historical 
+monthly 
+yield data 
+with 
+environmen
+tal and 
+managemen
+t factors 
+field-wise-yield-
+dataset.xlsx 
+5,821 rows 
+and 22 
+columns 
+across 10 
+years 
+Division, 
+Field_ID, 
+Year, 
+Month, 
+Planting_Ye
+ar, bush age, 
+pruning 
+info, 
+rainfall, wet 
+days, 
+fertilizer 
+details, 
+plucking 
+rounds, soil 
+pH, Yiled 
+total 
+Tea Auction 
+Data 
+transaction 
+Dataset 
+2023-2025 
+Colombo 
+Tea Auction 
+transaction 
+records 
+DATA TABLE-2023-
+2025 SALE 50.xlsx 
+(Sheet: DATA) 
+1.5M 
+rows,26 
+cols across 
+3 years 
+ 
+YEAR, SALE 
+NO, GRADE, 
+QTY, PRICE, 
+ELE1, 
+BROKER, 
+FACTORY, 
+BUYER, 
+MFREF 
+TeaLeaves 
+Dataset 
+Image 
+dataset 
+Collected from local tea 
+estates, and supplemented 
+~6,000+ 
+annotated 
+Disease 
+class label,  
+---PAGE 5---
+   
+ 
+BSc (Hons) in Information Technology Specializing Data Science 
+ 
+ 
+Research Project - IT4010                                                         Data Analysis Report  
+ 
+  5 
+containing 
+healthy tea 
+leaves and 
+major tea 
+leaf 
+diseases 
+and pests. 
+Includes 
+common 
+field level 
+conditions 
+and 
+symptom 
+variations. 
+ 
+- Blister 
+Blight 
+- Brown 
+Blight  
+- Grey Blight 
+- Red Rust  
+- Healthy  
+- Helopeltis  
+with Kaggle datasets and 
+curated academic 
+references. 
+images 
+across 6 
+classes 
+(Healthy, 
+Blister 
+Blight, 
+Brown 
+Blight, 
+Grey 
+Blight, Red 
+Rust, 
+Helopeltis) 
+RGB images 
+- Color 
+images used 
+for visual 
+pattern 
+recognition,  
+leaf texture 
+- Used by 
+CNN to 
+identify 
+disease 
+patterns,  
+color 
+variation, 
+visible 
+symptoms, 
+background 
+variation 
+InvasiveSpec
+ies Dataset 
+Image 
+dataset 
+containing 
+invasive 
+plant 
+species 
+affecting 
+tea 
+plantations.  
+ 
+- Lantana 
+camara 
+- Tridax 
+procumben
+s 
+Field photographed from 
+tea growing regions, 
+supplemented with Kaggle 
+invasive species datasets 
+and curated 
+online/agricultural 
+reference sources. 
+~1,500+ 
+annotated 
+images 
+across 2 
+invasive 
+species 
+classes 
+(Lantana 
+camara, 
+Tridax 
+procumbe
+ns) 
+Species 
+label, RGB 
+image, leaf 
+shape, 
+texture 
+patterns, 
+color 
+variations, 
+growth 
+characteristi
+c, 
+background 
+conditions 
+Tea Season 
+Disease 
+Dataset 
+Structured 
+dataset 
+tea_season_disease_datase
+t.xlsx  
+5,000+ 
+rows with 
+Month, 
+Season, 
+Region, 

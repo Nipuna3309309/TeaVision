@@ -1,0 +1,782 @@
+[
+  {
+    "elevation": "Medium",
+    "grade": "BM",
+    "grade_safe": "BM",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BM.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOP",
+    "grade_safe": "BOP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOP1",
+    "grade_safe": "BOP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOP1A",
+    "grade_safe": "BOP1A",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOP1A.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOPA",
+    "grade_safe": "BOPA",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOPA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOPF",
+    "grade_safe": "BOPF",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOPF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOPFSP",
+    "grade_safe": "BOPFSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOPFSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BOPSP",
+    "grade_safe": "BOPSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BOPSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BP",
+    "grade_safe": "BP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BP1",
+    "grade_safe": "BP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BPS",
+    "grade_safe": "BPS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 142,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "BT",
+    "grade_safe": "BT",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_BT.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "C.S.FGS",
+    "grade_safe": "C.S.FGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_C.S.FGS.pkl",
+    "last_train_date": "2025-09-24",
+    "n_points": 45,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CEYLON GT",
+    "grade_safe": "CEYLON GT",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CEYLON GT.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 40,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CGT SP HY",
+    "grade_safe": "CGT SP HY",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CGT SP HY.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 48,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CGTFGS",
+    "grade_safe": "CGTFGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CGTFGS.pkl",
+    "last_train_date": "2025-10-01",
+    "n_points": 59,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CGTGP1",
+    "grade_safe": "CGTGP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CGTGP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 32,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CGTSP.HYSO",
+    "grade_safe": "CGTSP.HYSO",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CGTSP.HYSO.pkl",
+    "last_train_date": "2025-08-06",
+    "n_points": 33,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "CH",
+    "grade_safe": "CH",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_CH.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 68,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "DUST",
+    "grade_safe": "DUST",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_DUST.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "DUST1",
+    "grade_safe": "DUST1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_DUST1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOP",
+    "grade_safe": "FBOP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOP1",
+    "grade_safe": "FBOP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOPF",
+    "grade_safe": "FBOPF",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOPF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOPF1",
+    "grade_safe": "FBOPF1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOPF1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOPFEXSP",
+    "grade_safe": "FBOPFEXSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOPFEXSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 141,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOPFEXSP1",
+    "grade_safe": "FBOPFEXSP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOPFEXSP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 135,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FBOPFSP",
+    "grade_safe": "FBOPFSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FBOPFSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 146,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FGS",
+    "grade_safe": "FGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FGS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "FGS1",
+    "grade_safe": "FGS1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_FGS1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GOLDEN TIP",
+    "grade_safe": "GOLDEN TIP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GOLDEN TIP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 68,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GP1",
+    "grade_safe": "GP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 114,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTCSFGS",
+    "grade_safe": "GTCSFGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTCSFGS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 55,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTF",
+    "grade_safe": "GTF",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTF.pkl",
+    "last_train_date": "2025-01-29",
+    "n_points": 44,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTFDUST",
+    "grade_safe": "GTFDUST",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTFDUST.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 36,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTFF1",
+    "grade_safe": "GTFF1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTFF1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 109,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTFF2",
+    "grade_safe": "GTFF2",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTFF2.pkl",
+    "last_train_date": "2025-10-15",
+    "n_points": 40,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTFGS",
+    "grade_safe": "GTFGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTFGS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 97,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTFGSSP",
+    "grade_safe": "GTFGSSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTFGSSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 101,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTGP1",
+    "grade_safe": "GTGP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTGP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 137,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTGPSP",
+    "grade_safe": "GTGPSP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTGPSP.pkl",
+    "last_train_date": "2025-08-13",
+    "n_points": 54,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTOPA",
+    "grade_safe": "GTOPA",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTOPA.pkl",
+    "last_train_date": "2025-10-15",
+    "n_points": 67,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTSENFGS",
+    "grade_safe": "GTSENFGS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTSENFGS.pkl",
+    "last_train_date": "2025-10-08",
+    "n_points": 87,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTSPHY",
+    "grade_safe": "GTSPHY",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTSPHY.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 72,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "GTSPHYSON",
+    "grade_safe": "GTSPHYSON",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_GTSPHYSON.pkl",
+    "last_train_date": "2025-09-17",
+    "n_points": 46,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "OP",
+    "grade_safe": "OP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_OP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "OP1",
+    "grade_safe": "OP1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_OP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "OPA",
+    "grade_safe": "OPA",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_OPA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "ORGANIC FT",
+    "grade_safe": "ORGANIC FT",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_ORGANIC FT.pkl",
+    "last_train_date": "2025-04-16",
+    "n_points": 33,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "ORGBTBOPF",
+    "grade_safe": "ORGBTBOPF",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_ORGBTBOPF.pkl",
+    "last_train_date": "2025-10-15",
+    "n_points": 38,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "PD",
+    "grade_safe": "PD",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_PD.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "PEK",
+    "grade_safe": "PEK",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_PEK.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "PEK1",
+    "grade_safe": "PEK1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_PEK1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "PF",
+    "grade_safe": "PF",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_PF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "PF1",
+    "grade_safe": "PF1",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_PF1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "S/TIPPS",
+    "grade_safe": "S_TIPPS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_S_TIPPS.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 41,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "SILVER TIP",
+    "grade_safe": "SILVER TIP",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_SILVER TIP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 146,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "SILVERTIPS",
+    "grade_safe": "SILVERTIPS",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_SILVERTIPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 35,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "WTBL",
+    "grade_safe": "WTBL",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_WTBL.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 47,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "Medium",
+    "grade": "YH",
+    "grade_safe": "YH",
+    "model_path": "saved_models_arima_medium/ARIMA_Medium_YH.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 82,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  }
+]

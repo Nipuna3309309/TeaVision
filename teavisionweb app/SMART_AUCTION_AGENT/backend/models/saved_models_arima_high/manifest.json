@@ -1,0 +1,925 @@
+[
+  {
+    "elevation": "High",
+    "grade": "BM",
+    "grade_safe": "BM",
+    "model_path": "saved_models_arima_high/ARIMA_High_BM.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOP",
+    "grade_safe": "BOP",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOP1",
+    "grade_safe": "BOP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOP1A",
+    "grade_safe": "BOP1A",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOP1A.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOPA",
+    "grade_safe": "BOPA",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOPA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOPF",
+    "grade_safe": "BOPF",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOPF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOPFSP",
+    "grade_safe": "BOPFSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOPFSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 118,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BOPSP",
+    "grade_safe": "BOPSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_BOPSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BP",
+    "grade_safe": "BP",
+    "model_path": "saved_models_arima_high/ARIMA_High_BP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BP1",
+    "grade_safe": "BP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_BP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 143,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BPS",
+    "grade_safe": "BPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_BPS.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 112,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "BT",
+    "grade_safe": "BT",
+    "model_path": "saved_models_arima_high/ARIMA_High_BT.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 145,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "CM1",
+    "grade_safe": "CM1",
+    "model_path": "saved_models_arima_high/ARIMA_High_CM1.pkl",
+    "last_train_date": "2025-10-22",
+    "n_points": 52,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "D2",
+    "grade_safe": "D2",
+    "model_path": "saved_models_arima_high/ARIMA_High_D2.pkl",
+    "last_train_date": "2025-10-29",
+    "n_points": 71,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "DUST",
+    "grade_safe": "DUST",
+    "model_path": "saved_models_arima_high/ARIMA_High_DUST.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "DUST1",
+    "grade_safe": "DUST1",
+    "model_path": "saved_models_arima_high/ARIMA_High_DUST1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "EMERAL-TIP",
+    "grade_safe": "EMERAL-TIP",
+    "model_path": "saved_models_arima_high/ARIMA_High_EMERAL-TIP.pkl",
+    "last_train_date": "2025-04-02",
+    "n_points": 32,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOP",
+    "grade_safe": "FBOP",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOP1",
+    "grade_safe": "FBOP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOPF",
+    "grade_safe": "FBOPF",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOPF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOPF1",
+    "grade_safe": "FBOPF1",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOPF1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOPFEXSP",
+    "grade_safe": "FBOPFEXSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOPFEXSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 103,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FBOPFSP",
+    "grade_safe": "FBOPFSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_FBOPFSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 142,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FGS",
+    "grade_safe": "FGS",
+    "model_path": "saved_models_arima_high/ARIMA_High_FGS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FGS1",
+    "grade_safe": "FGS1",
+    "model_path": "saved_models_arima_high/ARIMA_High_FGS1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "FGSSP",
+    "grade_safe": "FGSSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_FGSSP.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 68,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "G/TIPPS",
+    "grade_safe": "G_TIPPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_G_TIPPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 30,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GC",
+    "grade_safe": "GC",
+    "model_path": "saved_models_arima_high/ARIMA_High_GC.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 74,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GOLDEN CUR",
+    "grade_safe": "GOLDEN CUR",
+    "model_path": "saved_models_arima_high/ARIMA_High_GOLDEN CUR.pkl",
+    "last_train_date": "2025-10-29",
+    "n_points": 62,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GOLDEN TIP",
+    "grade_safe": "GOLDEN TIP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GOLDEN TIP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 144,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GOLDENTIPS",
+    "grade_safe": "GOLDENTIPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_GOLDENTIPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 35,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GP1",
+    "grade_safe": "GP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_GP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 109,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GPOPA2",
+    "grade_safe": "GPOPA2",
+    "model_path": "saved_models_arima_high/ARIMA_High_GPOPA2.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 39,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GPSP",
+    "grade_safe": "GPSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GPSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 97,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GPSP1",
+    "grade_safe": "GPSP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_GPSP1.pkl",
+    "last_train_date": "2025-10-22",
+    "n_points": 43,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GPYH",
+    "grade_safe": "GPYH",
+    "model_path": "saved_models_arima_high/ARIMA_High_GPYH.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 42,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTBOPF",
+    "grade_safe": "GTBOPF",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTBOPF.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 72,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTF",
+    "grade_safe": "GTF",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTF.pkl",
+    "last_train_date": "2025-08-06",
+    "n_points": 55,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTFGS",
+    "grade_safe": "GTFGS",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTFGS.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 113,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTFGS1",
+    "grade_safe": "GTFGS1",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTFGS1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 127,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTFGSSP",
+    "grade_safe": "GTFGSSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTFGSSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 126,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTGC",
+    "grade_safe": "GTGC",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTGC.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 69,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTGP",
+    "grade_safe": "GTGP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTGP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 49,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTGP1",
+    "grade_safe": "GTGP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTGP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 135,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTGPSP",
+    "grade_safe": "GTGPSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTGPSP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 120,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTOP",
+    "grade_safe": "GTOP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTOP.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 58,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTOPA",
+    "grade_safe": "GTOPA",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTOPA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 98,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTOPA2",
+    "grade_safe": "GTOPA2",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTOPA2.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 98,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTS",
+    "grade_safe": "GTS",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 40,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTSM",
+    "grade_safe": "GTSM",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTSM.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 72,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTYH",
+    "grade_safe": "GTYH",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTYH.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 130,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTYH2",
+    "grade_safe": "GTYH2",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTYH2.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 79,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "GTYHSP",
+    "grade_safe": "GTYHSP",
+    "model_path": "saved_models_arima_high/ARIMA_High_GTYHSP.pkl",
+    "last_train_date": "2025-10-22",
+    "n_points": 55,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "INNOVATIVE",
+    "grade_safe": "INNOVATIVE",
+    "model_path": "saved_models_arima_high/ARIMA_High_INNOVATIVE.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 134,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "OP",
+    "grade_safe": "OP",
+    "model_path": "saved_models_arima_high/ARIMA_High_OP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "OP1",
+    "grade_safe": "OP1",
+    "model_path": "saved_models_arima_high/ARIMA_High_OP1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "OPA",
+    "grade_safe": "OPA",
+    "model_path": "saved_models_arima_high/ARIMA_High_OPA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PD",
+    "grade_safe": "PD",
+    "model_path": "saved_models_arima_high/ARIMA_High_PD.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PEK",
+    "grade_safe": "PEK",
+    "model_path": "saved_models_arima_high/ARIMA_High_PEK.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PEK1",
+    "grade_safe": "PEK1",
+    "model_path": "saved_models_arima_high/ARIMA_High_PEK1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PF",
+    "grade_safe": "PF",
+    "model_path": "saved_models_arima_high/ARIMA_High_PF.pkl",
+    "last_train_date": "2025-10-01",
+    "n_points": 118,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PF1",
+    "grade_safe": "PF1",
+    "model_path": "saved_models_arima_high/ARIMA_High_PF1.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "PLATI -TIP",
+    "grade_safe": "PLATI -TIP",
+    "model_path": "saved_models_arima_high/ARIMA_High_PLATI -TIP.pkl",
+    "last_train_date": "2025-04-16",
+    "n_points": 36,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "S.TIPS",
+    "grade_safe": "S.TIPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_S.TIPS.pkl",
+    "last_train_date": "2025-09-17",
+    "n_points": 39,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "S/TIPPS",
+    "grade_safe": "S_TIPPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_S_TIPPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 60,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "SCALPA TIP",
+    "grade_safe": "SCALPA TIP",
+    "model_path": "saved_models_arima_high/ARIMA_High_SCALPA TIP.pkl",
+    "last_train_date": "2025-04-09",
+    "n_points": 50,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "SILVER TIP",
+    "grade_safe": "SILVER TIP",
+    "model_path": "saved_models_arima_high/ARIMA_High_SILVER TIP.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 147,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "SILVERTIPS",
+    "grade_safe": "SILVERTIPS",
+    "model_path": "saved_models_arima_high/ARIMA_High_SILVERTIPS.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 42,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "WHITE TEA",
+    "grade_safe": "WHITE TEA",
+    "model_path": "saved_models_arima_high/ARIMA_High_WHITE TEA.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 123,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "YH",
+    "grade_safe": "YH",
+    "model_path": "saved_models_arima_high/ARIMA_High_YH.pkl",
+    "last_train_date": "2025-11-12",
+    "n_points": 80,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "elevation": "High",
+    "grade": "YH2",
+    "grade_safe": "YH2",
+    "model_path": "saved_models_arima_high/ARIMA_High_YH2.pkl",
+    "last_train_date": "2025-11-05",
+    "n_points": 35,
+    "order": [
+      1,
+      1,
+      1
+    ]
+  }
+]

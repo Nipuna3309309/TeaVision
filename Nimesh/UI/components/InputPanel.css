@@ -1,0 +1,352 @@
+.ip-panel {
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow:
+    0 18px 40px rgba(56, 78, 52, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ip-section-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #3f513d;
+}
+
+.ip-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ip-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-block-nested {
+  margin-top: 12px;
+}
+
+.ip-field-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #516050;
+}
+
+.ip-field-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid #dbe5d8;
+  background: rgba(255, 255, 255, 0.92);
+  color: #415041;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+  box-sizing: border-box;
+}
+
+.ip-field-input:focus {
+  border-color: #a7baa2;
+  box-shadow: 0 0 0 4px rgba(134, 174, 123, 0.12);
+  background: #ffffff;
+}
+
+.ip-field-input-tall {
+  height: 44px;
+}
+
+.ip-select-wrap {
+  position: relative;
+}
+
+.ip-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 42px;
+  cursor: pointer;
+}
+
+.ip-select-icon {
+  pointer-events: none;
+  position: absolute;
+  inset: 0 16px 0 auto;
+  display: flex;
+  align-items: center;
+  color: #96a091;
+}
+
+.ip-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.ip-tooltip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid #bcc8ba;
+  background: transparent;
+  color: #7b877b;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  cursor: help;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.ip-tooltip:hover .ip-tooltip-icon {
+  border-color: #97a594;
+  color: #5f6b5f;
+}
+
+.ip-tooltip-box {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 30;
+  margin-top: 8px;
+  width: max-content;
+  max-width: 220px;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  border: 1px solid #dfe6da;
+  background: #ffffff;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: #556255;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 10px 30px rgba(70, 88, 64, 0.14);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  white-space: normal;
+}
+
+.ip-tooltip:hover .ip-tooltip-box {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ip-check-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4c5850;
+  cursor: pointer;
+}
+
+.ip-check-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ip-checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border-radius: 6px;
+  border: 1px solid #cfd8ca;
+  accent-color: #62a85f;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.ip-subcard {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid #e1e7dd;
+  background: rgba(245, 248, 242, 0.90);
+}
+
+.ip-subcard-head {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #90998b;
+}
+
+.ip-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ip-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ip-period-head {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #697469;
+}
+
+.ip-mini-head {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #90998b;
+}
+
+.ip-learning-card {
+  padding: 16px;
+  border-radius: 22px;
+  border: 1px solid #e6ece2;
+  background: rgba(250, 252, 248, 0.90);
+}
+
+.ip-learning-head {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ip-learning-title {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c6c43;
+}
+
+.ip-learning-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ip-learning-run {
+  min-height: 34px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #eef7ea;
+  color: #60915b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.ip-learning-run:hover:not(:disabled) {
+  background: #e5f2df;
+}
+
+.ip-learning-run:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ip-actions {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ip-btn-main,
+.ip-btn-ghost {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ip-btn-main {
+  border: none;
+  background: linear-gradient(135deg, #63a862 0%, #4f9250 100%);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(83, 143, 82, 0.22);
+}
+
+.ip-btn-main:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 28px rgba(83, 143, 82, 0.28);
+}
+
+.ip-btn-ghost {
+  border: 1px solid #d9e3d5;
+  background: rgba(255, 255, 255, 0.78);
+  color: #576557;
+}
+
+.ip-btn-ghost:hover:not(:disabled) {
+  background: #f8fbf6;
+  border-color: #cdd8c9;
+}
+
+.ip-btn-main:disabled,
+.ip-btn-ghost:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .ip-grid-two,
+  .ip-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .ip-learning-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ip-learning-run {
+    width: 100%;
+  }
+}

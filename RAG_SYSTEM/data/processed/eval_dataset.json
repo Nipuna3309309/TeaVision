@@ -1,0 +1,183 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "What is TRI 2025 tea cultivar and its characteristics?",
+    "relevant_docs": [
+      "CUL_001"
+    ],
+    "category": "cultivar"
+  },
+  {
+    "query_id": "Q02",
+    "query": "Which tea cultivars are resistant to blister blight disease?",
+    "relevant_docs": [
+      "CUL_001",
+      "CUL_005",
+      "CUL_006",
+      "CUL_007",
+      "DIS_001"
+    ],
+    "category": "cultivar"
+  },
+  {
+    "query_id": "Q03",
+    "query": "What are the health benefits of EGCG in tea?",
+    "relevant_docs": [
+      "HLT_001",
+      "HLT_002"
+    ],
+    "category": "health"
+  },
+  {
+    "query_id": "Q04",
+    "query": "Describe Nuwara Eliya tea region and its characteristics",
+    "relevant_docs": [
+      "REG_001"
+    ],
+    "category": "region"
+  },
+  {
+    "query_id": "Q05",
+    "query": "What is the difference between orthodox and CTC processing?",
+    "relevant_docs": [
+      "PRO_001",
+      "PRO_002"
+    ],
+    "category": "processing"
+  },
+  {
+    "query_id": "Q06",
+    "query": "What is Orange Pekoe tea grade?",
+    "relevant_docs": [
+      "GRD_001",
+      "GRD_002"
+    ],
+    "category": "grade"
+  },
+  {
+    "query_id": "Q07",
+    "query": "How does elevation affect tea quality?",
+    "relevant_docs": [
+      "REG_008",
+      "QUA_002"
+    ],
+    "category": "quality"
+  },
+  {
+    "query_id": "Q08",
+    "query": "What is fine plucking standard for tea?",
+    "relevant_docs": [
+      "PLK_001",
+      "PLK_002"
+    ],
+    "category": "plucking"
+  },
+  {
+    "query_id": "Q09",
+    "query": "What causes blister blight disease in tea?",
+    "relevant_docs": [
+      "DIS_001"
+    ],
+    "category": "disease"
+  },
+  {
+    "query_id": "Q10",
+    "query": "What is L-theanine and its effects?",
+    "relevant_docs": [
+      "HLT_003"
+    ],
+    "category": "health"
+  },
+  {
+    "query_id": "Q11",
+    "query": "How is Silver Tips tea produced?",
+    "relevant_docs": [
+      "GRD_010",
+      "PLK_002"
+    ],
+    "category": "grade"
+  },
+  {
+    "query_id": "Q12",
+    "query": "What is the Uva tea region known for?",
+    "relevant_docs": [
+      "REG_003"
+    ],
+    "category": "region"
+  },
+  {
+    "query_id": "Q13",
+    "query": "What are nematode tolerant tea cultivars?",
+    "relevant_docs": [
+      "CUL_008",
+      "CUL_009",
+      "CUL_012",
+      "DIS_002"
+    ],
+    "category": "cultivar"
+  },
+  {
+    "query_id": "Q14",
+    "query": "How does withering affect tea quality?",
+    "relevant_docs": [
+      "PRO_003",
+      "PRO_001"
+    ],
+    "category": "processing"
+  },
+  {
+    "query_id": "Q15",
+    "query": "What is the AI grading system for tea leaves?",
+    "relevant_docs": [
+      "AI_001",
+      "AI_002",
+      "AI_003"
+    ],
+    "category": "ai_grading"
+  },
+  {
+    "query_id": "Q16",
+    "query": "What tea grades are best for tea bags?",
+    "relevant_docs": [
+      "GRD_008",
+      "GRD_009",
+      "GRD_013"
+    ],
+    "category": "grade"
+  },
+  {
+    "query_id": "Q17",
+    "query": "How much tea should I drink daily for health?",
+    "relevant_docs": [
+      "HLT_007",
+      "HLT_004"
+    ],
+    "category": "health"
+  },
+  {
+    "query_id": "Q18",
+    "query": "What is the history of Ceylon tea?",
+    "relevant_docs": [
+      "HIS_001",
+      "HIS_002"
+    ],
+    "category": "history"
+  },
+  {
+    "query_id": "Q19",
+    "query": "How does climate change affect tea production?",
+    "relevant_docs": [
+      "SUS_002"
+    ],
+    "category": "sustainability"
+  },
+  {
+    "query_id": "Q20",
+    "query": "What is the Ceylon tea Lion Logo certification?",
+    "relevant_docs": [
+      "TRA_002",
+      "REG_008"
+    ],
+    "category": "trade"
+  }
+]
