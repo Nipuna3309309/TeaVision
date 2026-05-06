@@ -656,11 +656,11 @@
         </p>
       </div>
 
-      <form class="contact-form"
-        onsubmit="event.preventDefault(); alert('Thanks! We will get back to you soon.'); this.reset();">
-        <label>Name<input type="text" required placeholder="Enter your name" /></label>
-        <label>Email Address<input type="email" required placeholder="Enter your email" /></label>
-        <label>Message or Query<textarea rows="5" required placeholder="Type your message"></textarea></label>
+      <form class="contact-form" id="contactForm"
+        onsubmit="event.preventDefault();var f=this;var n=f.querySelector('[name=name]').value;var e=f.querySelector('[name=email]').value;var m=f.querySelector('[name=message]').value;var s='TeaVision Inquiry from '+n;var b='Name: '+n+'%0AEmail: '+e+'%0A%0A'+encodeURIComponent(m);window.open('mailto:nipunaabeysekara2001@gmail.com?subject='+encodeURIComponent(s)+'&body='+b);alert('Your email client should open now. If not, please email us directly at nipunaabeysekara2001@gmail.com');f.reset();">
+        <label>Name<input type="text" name="name" required placeholder="Enter your name" /></label>
+        <label>Email Address<input type="email" name="email" required placeholder="Enter your email" /></label>
+        <label>Message or Query<textarea name="message" rows="5" required placeholder="Type your message"></textarea></label>
         <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
       </form>
     </div>
