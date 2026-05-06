@@ -656,8 +656,11 @@
         </p>
       </div>
 
-      <form class="contact-form" id="contactForm"
-        onsubmit="event.preventDefault();var f=this;var n=f.querySelector('[name=name]').value;var e=f.querySelector('[name=email]').value;var m=f.querySelector('[name=message]').value;var s='TeaVision Inquiry from '+n;var b='Name: '+n+'%0AEmail: '+e+'%0A%0A'+encodeURIComponent(m);window.open('mailto:nipunaabeysekara2001@gmail.com?subject='+encodeURIComponent(s)+'&body='+b);alert('Your email client should open now. If not, please email us directly at nipunaabeysekara2001@gmail.com');f.reset();">
+      <form class="contact-form" action="https://formsubmit.co/nipunaabeysekara2001@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="TeaVision - New Contact Form Message">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://nipuna3309309.github.io/TeaVision/">
+        <input type="hidden" name="_template" value="table">
         <label>Name<input type="text" name="name" required placeholder="Enter your name" /></label>
         <label>Email Address<input type="email" name="email" required placeholder="Enter your email" /></label>
         <label>Message or Query<textarea name="message" rows="5" required placeholder="Type your message"></textarea></label>
