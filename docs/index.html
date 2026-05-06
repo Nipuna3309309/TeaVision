@@ -14,6 +14,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -656,15 +657,13 @@
         </p>
       </div>
 
-      <form class="contact-form" action="https://formsubmit.co/nipunaabeysekara2001@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="TeaVision - New Contact Form Message">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://nipuna3309309.github.io/TeaVision/">
-        <input type="hidden" name="_template" value="table">
-        <label>Name<input type="text" name="name" required placeholder="Enter your name" /></label>
-        <label>Email Address<input type="email" name="email" required placeholder="Enter your email" /></label>
-        <label>Message or Query<textarea name="message" rows="5" required placeholder="Type your message"></textarea></label>
-        <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      <form class="contact-form" id="contactForm">
+        <label>Name<input type="text" name="from_name" required placeholder="Enter your name" /></label>
+        <label>Email Address<input type="email" name="from_email" required placeholder="Enter your email" /></label>
+        <label>Subject<input type="text" name="subject" required placeholder="What is this about?" /></label>
+        <label>Message or Query<textarea rows="5" name="message" required placeholder="Type your message"></textarea></label>
+        <button type="submit" class="btn btn-primary" id="contactBtn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p id="contactStatus" style="margin-top:12px; font-size:0.9rem; display:none;"></p>
       </form>
     </div>
   </section>

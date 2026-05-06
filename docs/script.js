@@ -69,6 +69,46 @@ const counterIO = new IntersectionObserver((entries) => {
 
 counters.forEach(c => counterIO.observe(c));
 
+// ── EmailJS Contact Form ──
+(function() {
+  emailjs.init({ publicKey: 'sdUb9nObomp06BX2a' });
+
+  const contactForm = document.getElementById('contactForm');
+  const contactBtn = document.getElementById('contactBtn');
+  const contactStatus = document.getElementById('contactStatus');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    contactBtn.disabled = true;
+    contactBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    contactStatus.style.display = 'none';
+
+    var templateParams = {
+      from_name: contactForm.from_name.value,
+      from_email: contactForm.from_email.value,
+      subject: contactForm.subject.value,
+      message: contactForm.message.value
+    };
+
+    emailjs.send('service_5a4rbzm', 'template_xo3ujvu', templateParams)
+      .then(function () {
+        contactStatus.style.display = 'block';
+        contactStatus.style.color = '#4ade80';
+        contactStatus.textContent = 'Message sent successfully! We will get back to you soon.';
+        contactForm.reset();
+        contactBtn.disabled = false;
+        contactBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+      })
+      .catch(function (err) {
+        contactStatus.style.display = 'block';
+        contactStatus.style.color = '#f87171';
+        contactStatus.textContent = 'Failed to send. Please email us directly at nipunaabeysekara2001@gmail.com';
+        contactBtn.disabled = false;
+        contactBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+      });
+  });
+})();
+
 // Animate metric bars when visible
 const bars = document.querySelectorAll('.bar-fill');
 bars.forEach(bar => {
